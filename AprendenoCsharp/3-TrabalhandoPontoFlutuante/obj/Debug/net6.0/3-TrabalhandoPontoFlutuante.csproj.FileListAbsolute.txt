@@ -1,0 +1,15 @@
+C:\Users\camil\source\repos\AprendenoCsharp\3-TrabalhandoPontoFlutuante\bin\Debug\net6.0\3-TrabalhandoPontoFlutuante.exe
+C:\Users\camil\source\repos\AprendenoCsharp\3-TrabalhandoPontoFlutuante\bin\Debug\net6.0\3-TrabalhandoPontoFlutuante.deps.json
+C:\Users\camil\source\repos\AprendenoCsharp\3-TrabalhandoPontoFlutuante\bin\Debug\net6.0\3-TrabalhandoPontoFlutuante.runtimeconfig.json
+C:\Users\camil\source\repos\AprendenoCsharp\3-TrabalhandoPontoFlutuante\bin\Debug\net6.0\3-TrabalhandoPontoFlutuante.dll
+C:\Users\camil\source\repos\AprendenoCsharp\3-TrabalhandoPontoFlutuante\bin\Debug\net6.0\3-TrabalhandoPontoFlutuante.pdb
+C:\Users\camil\source\repos\AprendenoCsharp\3-TrabalhandoPontoFlutuante\obj\Debug\net6.0\3-TrabalhandoPontoFlutuante.csproj.AssemblyReference.cache
+C:\Users\camil\source\repos\AprendenoCsharp\3-TrabalhandoPontoFlutuante\obj\Debug\net6.0\3-TrabalhandoPontoFlutuante.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\camil\source\repos\AprendenoCsharp\3-TrabalhandoPontoFlutuante\obj\Debug\net6.0\3-TrabalhandoPontoFlutuante.AssemblyInfoInputs.cache
+C:\Users\camil\source\repos\AprendenoCsharp\3-TrabalhandoPontoFlutuante\obj\Debug\net6.0\3-TrabalhandoPontoFlutuante.AssemblyInfo.cs
+C:\Users\camil\source\repos\AprendenoCsharp\3-TrabalhandoPontoFlutuante\obj\Debug\net6.0\3-TrabalhandoPontoFlutuante.csproj.CoreCompileInputs.cache
+C:\Users\camil\source\repos\AprendenoCsharp\3-TrabalhandoPontoFlutuante\obj\Debug\net6.0\3-TrabalhandoPontoFlutuante.dll
+C:\Users\camil\source\repos\AprendenoCsharp\3-TrabalhandoPontoFlutuante\obj\Debug\net6.0\refint\3-TrabalhandoPontoFlutuante.dll
+C:\Users\camil\source\repos\AprendenoCsharp\3-TrabalhandoPontoFlutuante\obj\Debug\net6.0\3-TrabalhandoPontoFlutuante.pdb
+C:\Users\camil\source\repos\AprendenoCsharp\3-TrabalhandoPontoFlutuante\obj\Debug\net6.0\3-TrabalhandoPontoFlutuante.genruntimeconfig.cache
+C:\Users\camil\source\repos\AprendenoCsharp\3-TrabalhandoPontoFlutuante\obj\Debug\net6.0\ref\3-TrabalhandoPontoFlutuante.dll

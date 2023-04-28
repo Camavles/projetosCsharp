@@ -1,0 +1,15 @@
+C:\Users\camil\source\repos\AprendenoCsharp\P14-TarefaDois\bin\Debug\net6.0\P14-EncadeandoFor.exe
+C:\Users\camil\source\repos\AprendenoCsharp\P14-TarefaDois\bin\Debug\net6.0\P14-EncadeandoFor.deps.json
+C:\Users\camil\source\repos\AprendenoCsharp\P14-TarefaDois\bin\Debug\net6.0\P14-EncadeandoFor.runtimeconfig.json
+C:\Users\camil\source\repos\AprendenoCsharp\P14-TarefaDois\bin\Debug\net6.0\P14-EncadeandoFor.dll
+C:\Users\camil\source\repos\AprendenoCsharp\P14-TarefaDois\bin\Debug\net6.0\P14-EncadeandoFor.pdb
+C:\Users\camil\source\repos\AprendenoCsharp\P14-TarefaDois\obj\Debug\net6.0\P14-EncadeandoFor.csproj.AssemblyReference.cache
+C:\Users\camil\source\repos\AprendenoCsharp\P14-TarefaDois\obj\Debug\net6.0\P14-EncadeandoFor.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\camil\source\repos\AprendenoCsharp\P14-TarefaDois\obj\Debug\net6.0\P14-EncadeandoFor.AssemblyInfoInputs.cache
+C:\Users\camil\source\repos\AprendenoCsharp\P14-TarefaDois\obj\Debug\net6.0\P14-EncadeandoFor.AssemblyInfo.cs
+C:\Users\camil\source\repos\AprendenoCsharp\P14-TarefaDois\obj\Debug\net6.0\P14-EncadeandoFor.csproj.CoreCompileInputs.cache
+C:\Users\camil\source\repos\AprendenoCsharp\P14-TarefaDois\obj\Debug\net6.0\P14-EncadeandoFor.dll
+C:\Users\camil\source\repos\AprendenoCsharp\P14-TarefaDois\obj\Debug\net6.0\refint\P14-EncadeandoFor.dll
+C:\Users\camil\source\repos\AprendenoCsharp\P14-TarefaDois\obj\Debug\net6.0\P14-EncadeandoFor.pdb
+C:\Users\camil\source\repos\AprendenoCsharp\P14-TarefaDois\obj\Debug\net6.0\P14-EncadeandoFor.genruntimeconfig.cache
+C:\Users\camil\source\repos\AprendenoCsharp\P14-TarefaDois\obj\Debug\net6.0\ref\P14-EncadeandoFor.dll

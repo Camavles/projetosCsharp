@@ -1,0 +1,15 @@
+C:\Users\camil\source\repos\FastFood\FastFood\bin\Debug\net6.0\FastFood.exe
+C:\Users\camil\source\repos\FastFood\FastFood\bin\Debug\net6.0\FastFood.deps.json
+C:\Users\camil\source\repos\FastFood\FastFood\bin\Debug\net6.0\FastFood.runtimeconfig.json
+C:\Users\camil\source\repos\FastFood\FastFood\bin\Debug\net6.0\FastFood.dll
+C:\Users\camil\source\repos\FastFood\FastFood\bin\Debug\net6.0\FastFood.pdb
+C:\Users\camil\source\repos\FastFood\FastFood\obj\Debug\net6.0\FastFood.csproj.AssemblyReference.cache
+C:\Users\camil\source\repos\FastFood\FastFood\obj\Debug\net6.0\FastFood.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\camil\source\repos\FastFood\FastFood\obj\Debug\net6.0\FastFood.AssemblyInfoInputs.cache
+C:\Users\camil\source\repos\FastFood\FastFood\obj\Debug\net6.0\FastFood.AssemblyInfo.cs
+C:\Users\camil\source\repos\FastFood\FastFood\obj\Debug\net6.0\FastFood.csproj.CoreCompileInputs.cache
+C:\Users\camil\source\repos\FastFood\FastFood\obj\Debug\net6.0\FastFood.dll
+C:\Users\camil\source\repos\FastFood\FastFood\obj\Debug\net6.0\refint\FastFood.dll
+C:\Users\camil\source\repos\FastFood\FastFood\obj\Debug\net6.0\FastFood.pdb
+C:\Users\camil\source\repos\FastFood\FastFood\obj\Debug\net6.0\FastFood.genruntimeconfig.cache
+C:\Users\camil\source\repos\FastFood\FastFood\obj\Debug\net6.0\ref\FastFood.dll

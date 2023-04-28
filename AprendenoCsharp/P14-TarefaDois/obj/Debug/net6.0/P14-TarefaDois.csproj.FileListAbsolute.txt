@@ -1,0 +1,15 @@
+C:\Users\camil\source\repos\AprendenoCsharp\P14-TarefaDois\bin\Debug\net6.0\P14-TarefaDois.exe
+C:\Users\camil\source\repos\AprendenoCsharp\P14-TarefaDois\bin\Debug\net6.0\P14-TarefaDois.deps.json
+C:\Users\camil\source\repos\AprendenoCsharp\P14-TarefaDois\bin\Debug\net6.0\P14-TarefaDois.runtimeconfig.json
+C:\Users\camil\source\repos\AprendenoCsharp\P14-TarefaDois\bin\Debug\net6.0\P14-TarefaDois.dll
+C:\Users\camil\source\repos\AprendenoCsharp\P14-TarefaDois\bin\Debug\net6.0\P14-TarefaDois.pdb
+C:\Users\camil\source\repos\AprendenoCsharp\P14-TarefaDois\obj\Debug\net6.0\P14-TarefaDois.csproj.AssemblyReference.cache
+C:\Users\camil\source\repos\AprendenoCsharp\P14-TarefaDois\obj\Debug\net6.0\P14-TarefaDois.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\camil\source\repos\AprendenoCsharp\P14-TarefaDois\obj\Debug\net6.0\P14-TarefaDois.AssemblyInfoInputs.cache
+C:\Users\camil\source\repos\AprendenoCsharp\P14-TarefaDois\obj\Debug\net6.0\P14-TarefaDois.AssemblyInfo.cs
+C:\Users\camil\source\repos\AprendenoCsharp\P14-TarefaDois\obj\Debug\net6.0\P14-TarefaDois.csproj.CoreCompileInputs.cache
+C:\Users\camil\source\repos\AprendenoCsharp\P14-TarefaDois\obj\Debug\net6.0\P14-TarefaDois.dll
+C:\Users\camil\source\repos\AprendenoCsharp\P14-TarefaDois\obj\Debug\net6.0\refint\P14-TarefaDois.dll
+C:\Users\camil\source\repos\AprendenoCsharp\P14-TarefaDois\obj\Debug\net6.0\P14-TarefaDois.pdb
+C:\Users\camil\source\repos\AprendenoCsharp\P14-TarefaDois\obj\Debug\net6.0\P14-TarefaDois.genruntimeconfig.cache
+C:\Users\camil\source\repos\AprendenoCsharp\P14-TarefaDois\obj\Debug\net6.0\ref\P14-TarefaDois.dll

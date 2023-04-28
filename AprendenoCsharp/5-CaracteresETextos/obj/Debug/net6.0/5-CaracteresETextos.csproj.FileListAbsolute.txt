@@ -1,0 +1,15 @@
+C:\Users\camil\source\repos\AprendenoCsharp\5-CaracteresETextos\bin\Debug\net6.0\5-CaracteresETextos.exe
+C:\Users\camil\source\repos\AprendenoCsharp\5-CaracteresETextos\bin\Debug\net6.0\5-CaracteresETextos.deps.json
+C:\Users\camil\source\repos\AprendenoCsharp\5-CaracteresETextos\bin\Debug\net6.0\5-CaracteresETextos.runtimeconfig.json
+C:\Users\camil\source\repos\AprendenoCsharp\5-CaracteresETextos\bin\Debug\net6.0\5-CaracteresETextos.dll
+C:\Users\camil\source\repos\AprendenoCsharp\5-CaracteresETextos\bin\Debug\net6.0\5-CaracteresETextos.pdb
+C:\Users\camil\source\repos\AprendenoCsharp\5-CaracteresETextos\obj\Debug\net6.0\5-CaracteresETextos.csproj.AssemblyReference.cache
+C:\Users\camil\source\repos\AprendenoCsharp\5-CaracteresETextos\obj\Debug\net6.0\5-CaracteresETextos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\camil\source\repos\AprendenoCsharp\5-CaracteresETextos\obj\Debug\net6.0\5-CaracteresETextos.AssemblyInfoInputs.cache
+C:\Users\camil\source\repos\AprendenoCsharp\5-CaracteresETextos\obj\Debug\net6.0\5-CaracteresETextos.AssemblyInfo.cs
+C:\Users\camil\source\repos\AprendenoCsharp\5-CaracteresETextos\obj\Debug\net6.0\5-CaracteresETextos.csproj.CoreCompileInputs.cache
+C:\Users\camil\source\repos\AprendenoCsharp\5-CaracteresETextos\obj\Debug\net6.0\5-CaracteresETextos.dll
+C:\Users\camil\source\repos\AprendenoCsharp\5-CaracteresETextos\obj\Debug\net6.0\refint\5-CaracteresETextos.dll
+C:\Users\camil\source\repos\AprendenoCsharp\5-CaracteresETextos\obj\Debug\net6.0\5-CaracteresETextos.pdb
+C:\Users\camil\source\repos\AprendenoCsharp\5-CaracteresETextos\obj\Debug\net6.0\5-CaracteresETextos.genruntimeconfig.cache
+C:\Users\camil\source\repos\AprendenoCsharp\5-CaracteresETextos\obj\Debug\net6.0\ref\5-CaracteresETextos.dll

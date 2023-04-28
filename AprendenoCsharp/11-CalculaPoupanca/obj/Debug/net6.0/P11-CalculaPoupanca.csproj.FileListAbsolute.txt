@@ -1,0 +1,15 @@
+C:\Users\camil\source\repos\AprendenoCsharp\11-CalculaPoupanca\bin\Debug\net6.0\P11-CalculaPoupanca.exe
+C:\Users\camil\source\repos\AprendenoCsharp\11-CalculaPoupanca\bin\Debug\net6.0\P11-CalculaPoupanca.deps.json
+C:\Users\camil\source\repos\AprendenoCsharp\11-CalculaPoupanca\bin\Debug\net6.0\P11-CalculaPoupanca.runtimeconfig.json
+C:\Users\camil\source\repos\AprendenoCsharp\11-CalculaPoupanca\bin\Debug\net6.0\P11-CalculaPoupanca.dll
+C:\Users\camil\source\repos\AprendenoCsharp\11-CalculaPoupanca\bin\Debug\net6.0\P11-CalculaPoupanca.pdb
+C:\Users\camil\source\repos\AprendenoCsharp\11-CalculaPoupanca\obj\Debug\net6.0\P11-CalculaPoupanca.csproj.AssemblyReference.cache
+C:\Users\camil\source\repos\AprendenoCsharp\11-CalculaPoupanca\obj\Debug\net6.0\P11-CalculaPoupanca.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\camil\source\repos\AprendenoCsharp\11-CalculaPoupanca\obj\Debug\net6.0\P11-CalculaPoupanca.AssemblyInfoInputs.cache
+C:\Users\camil\source\repos\AprendenoCsharp\11-CalculaPoupanca\obj\Debug\net6.0\P11-CalculaPoupanca.AssemblyInfo.cs
+C:\Users\camil\source\repos\AprendenoCsharp\11-CalculaPoupanca\obj\Debug\net6.0\P11-CalculaPoupanca.csproj.CoreCompileInputs.cache
+C:\Users\camil\source\repos\AprendenoCsharp\11-CalculaPoupanca\obj\Debug\net6.0\P11-CalculaPoupanca.dll
+C:\Users\camil\source\repos\AprendenoCsharp\11-CalculaPoupanca\obj\Debug\net6.0\refint\P11-CalculaPoupanca.dll
+C:\Users\camil\source\repos\AprendenoCsharp\11-CalculaPoupanca\obj\Debug\net6.0\P11-CalculaPoupanca.pdb
+C:\Users\camil\source\repos\AprendenoCsharp\11-CalculaPoupanca\obj\Debug\net6.0\P11-CalculaPoupanca.genruntimeconfig.cache
+C:\Users\camil\source\repos\AprendenoCsharp\11-CalculaPoupanca\obj\Debug\net6.0\ref\P11-CalculaPoupanca.dll

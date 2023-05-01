@@ -13,30 +13,30 @@ cliente1.Email = "cami@lilili";
 
 Console.WriteLine(cliente1.Email);
 
-//cliente1.pedido.qtdItens = 6;
-//cliente1.pedido.valorUnitario = 15;
-//cliente1.pedido.CalcularValorTotal(6, 15);
+cliente1.pedido.qtdItens = 6;
+cliente1.pedido.valorUnitario = 15;
+double valorTotal = cliente1.pedido.CalcularValorTotal(cliente1.pedido.qtdItens, cliente1.pedido.valorUnitario);
 
 
-//cliente1.endereco.rua = "Rua Allili";
-//cliente1.endereco.cep = "0788-00";
-//cliente1.endereco.bairro = "Jd. das Graças";
-//cliente1.endereco.cidade = "Cotia";
-//cliente1.endereco.estado = "Pernambuco";
+cliente1.endereco.rua = "Rua Allili";
+cliente1.endereco.cep = "0788-00";
+cliente1.endereco.bairro = "Jd. das Graças";
+cliente1.endereco.cidade = "Cotia";
+cliente1.endereco.estado = "Pernambuco";
 
 
-//Console.WriteLine("Nome: " + cliente1.Nome);
-//Console.WriteLine("CPF: " + cliente1.Cpf);
-//Console.WriteLine();
+Console.WriteLine("Nome: " + cliente1.Nome);
+Console.WriteLine("CPF: " + cliente1.Cpf);
+Console.WriteLine();
 
-//Console.WriteLine("O Valor Total do seu pedido é R$ " + cliente1.pedido.CalcularValorTotal(6, 15));
-//Console.WriteLine();
-//Console.WriteLine("Este é o endereço de entregra: ");
-//Console.WriteLine("Rua: " + cliente1.endereco.rua);
-//Console.WriteLine("Cep: " + cliente1.endereco.cep);
-//Console.WriteLine("Bairro: " + cliente1.endereco.bairro);
-//Console.WriteLine("Cidade: " + cliente1.endereco.cidade);
-//Console.WriteLine("Estado: " + cliente1.endereco.estado);
+Console.WriteLine("O Valor Total do seu pedido é R$ " + valorTotal);
+Console.WriteLine();
+Console.WriteLine("Este é o endereço de entregra: ");
+Console.WriteLine("Rua: " + cliente1.endereco.rua);
+Console.WriteLine("Cep: " + cliente1.endereco.cep);
+Console.WriteLine("Bairro: " + cliente1.endereco.bairro);
+Console.WriteLine("Cidade: " + cliente1.endereco.cidade);
+Console.WriteLine("Estado: " + cliente1.endereco.estado);
 
 
 

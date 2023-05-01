@@ -1,0 +1,15 @@
+C:\Users\camil\source\repos\ExercicioUm\ExercicioUm\bin\Debug\net6.0\ExercicioUm.exe
+C:\Users\camil\source\repos\ExercicioUm\ExercicioUm\bin\Debug\net6.0\ExercicioUm.deps.json
+C:\Users\camil\source\repos\ExercicioUm\ExercicioUm\bin\Debug\net6.0\ExercicioUm.runtimeconfig.json
+C:\Users\camil\source\repos\ExercicioUm\ExercicioUm\bin\Debug\net6.0\ExercicioUm.dll
+C:\Users\camil\source\repos\ExercicioUm\ExercicioUm\bin\Debug\net6.0\ExercicioUm.pdb
+C:\Users\camil\source\repos\ExercicioUm\ExercicioUm\obj\Debug\net6.0\ExercicioUm.csproj.AssemblyReference.cache
+C:\Users\camil\source\repos\ExercicioUm\ExercicioUm\obj\Debug\net6.0\ExercicioUm.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\camil\source\repos\ExercicioUm\ExercicioUm\obj\Debug\net6.0\ExercicioUm.AssemblyInfoInputs.cache
+C:\Users\camil\source\repos\ExercicioUm\ExercicioUm\obj\Debug\net6.0\ExercicioUm.AssemblyInfo.cs
+C:\Users\camil\source\repos\ExercicioUm\ExercicioUm\obj\Debug\net6.0\ExercicioUm.csproj.CoreCompileInputs.cache
+C:\Users\camil\source\repos\ExercicioUm\ExercicioUm\obj\Debug\net6.0\ExercicioUm.dll
+C:\Users\camil\source\repos\ExercicioUm\ExercicioUm\obj\Debug\net6.0\refint\ExercicioUm.dll
+C:\Users\camil\source\repos\ExercicioUm\ExercicioUm\obj\Debug\net6.0\ExercicioUm.pdb
+C:\Users\camil\source\repos\ExercicioUm\ExercicioUm\obj\Debug\net6.0\ExercicioUm.genruntimeconfig.cache
+C:\Users\camil\source\repos\ExercicioUm\ExercicioUm\obj\Debug\net6.0\ref\ExercicioUm.dll

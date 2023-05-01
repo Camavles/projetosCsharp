@@ -28,6 +28,7 @@ using System.Xml;
 //    Console.WriteLine("Saldo insuficiente");
 //}
 
+
 //ContaCorrente contaDaMaria = new ContaCorrente();
 
 //contaDaMaria.titular = "Maria Sena";
@@ -52,6 +53,8 @@ using System.Xml;
 
 //Console.WriteLine(contaDaMaria.ToString());
 
+
+// TESTANDO COMPOSIÇÃO DE CLASSE // RELAÇÃO ENTRE CLASSES
 
 //Cliente cliente = new Cliente();
 

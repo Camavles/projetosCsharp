@@ -39,24 +39,31 @@ using System.Xml;
 
 
 // GET SET - PROPRIEDADE;
-ContaCorrente conta3 = new ContaCorrente();
-conta3.Titular = new Cliente();
-conta3.Titular.Nome = "Raphael Vieira";
-conta3.Titular.Cpf = "123.456.789-99";
-conta3.Titular.Profissao = "Economista";
-conta3.Numero_agencia = 125;
-conta3.Conta = "101-XY";
-conta3.DepositarSaldo(300);
+//ContaCorrente conta3 = new ContaCorrente();
+//conta3.Titular = new Cliente();
+//conta3.Titular.Nome = "Raphael Vieira";
+//conta3.Titular.Cpf = "123.456.789-99";
+//conta3.Titular.Profissao = "Economista";
+//conta3.Numero_agencia = 125;
+//conta3.Conta = "101-XY";
+//conta3.DepositarSaldo(300);
 
 
-Console.WriteLine("Informações da Conta");
-Console.WriteLine();
-Console.WriteLine("Titular: " + conta3.Titular.Nome);
-Console.WriteLine("CPF: " + conta3.Titular.Cpf);
-Console.WriteLine("Profissão: " + conta3.Titular.Profissao);
-Console.WriteLine();
-Console.WriteLine("Agência: " +  conta3.Numero_agencia);
-Console.WriteLine("Conta: " + conta3.Conta);
-Console.WriteLine("Saldo: " + conta3.Saldo);
+//Console.WriteLine("Informações da Conta");
+//Console.WriteLine();
+//Console.WriteLine("Titular: " + conta3.Titular.Nome);
+//Console.WriteLine("CPF: " + conta3.Titular.Cpf);
+//Console.WriteLine("Profissão: " + conta3.Titular.Profissao);
+//Console.WriteLine();
+//Console.WriteLine("Agência: " +  conta3.Numero_agencia);
+//Console.WriteLine("Conta: " + conta3.Conta);
+//Console.WriteLine("Saldo: " + conta3.Saldo);
+
+
+// Método Contrutor; static; propriedades auto implementadas;
+
+ContaCorrente conta4 = new ContaCorrente(18, "1010-X");
+ContaCorrente conta5 = new ContaCorrente(19, "1020-Y");
+Console.WriteLine(ContaCorrente.TotalContasCriadas);
 
 

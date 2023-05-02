@@ -9,24 +9,23 @@ namespace ExercicioUm.Contas
 {
     public class ContaCorrente
     {
+
+        public static int TotalContasCriadas { get; private set; }
         private Cliente titular;
-        public Cliente Titular
-        {
-            get { return titular; }
-            set { titular = value; }
-        }
+        // exemplo de propriedade auto implementada -> não precisei fazer uma validação aqui.
+        public Cliente Titular { get; set; }
 
 
         private string conta;
         public string Conta
         {
             get { return conta; }
-            set 
-            { 
-                if(value.Length == 0) 
+            private set
+            {
+                if (value.Length == 0)
                 {
                     return;
-                } 
+                }
                 else
                 {
                     this.conta = value;
@@ -42,9 +41,9 @@ namespace ExercicioUm.Contas
         public int Numero_agencia
         {
             get { return this.numero_agencia; }
-            set
+            private set
             {
-                if(value < 0)
+                if (value < 0)
                 {
                     return;
                 }
@@ -99,22 +98,30 @@ namespace ExercicioUm.Contas
         }
 
         // Uma forma de fazer GET SET
-        //public void SetSaldo(double valor)
-        //{
-        //    if(valor < 0)
-        //    {
-        //        return;
-        //    }
-        //    else
-        //    {
-        //        saldo += valor;
-        //    }
-        //}
+        public void SetSaldo(double valor)
+        {
+            if (valor < 0)
+            {
+                return;
+            }
+            else
+            {
+                saldo += valor;
+            }
+        }
 
-        //public double GetSaldo()
-        //{
-        //    return this.saldo;
-        //}
+        public double GetSaldo()
+        {
+            return this.saldo;
+        }
+
+        // método construtor; vai obrigar que eu passe na hora da contrsução do obj um número de agencia e um número de conta
+        public ContaCorrente(int numero_agencia, string numero_conta)
+        {
+            this.Numero_agencia = numero_agencia;
+            this.Conta = numero_conta;
+            TotalContasCriadas++;
+        }
 
     }
 }

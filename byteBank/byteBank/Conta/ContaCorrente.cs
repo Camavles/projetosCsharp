@@ -7,18 +7,20 @@ using System.Threading.Tasks;
 
 namespace byteBank.Conta
 {
+
     // utilizar PascalCase quando for nomear classe
-
-
     // usar camelCase quando for nomear variáveis q definem campos e parametrso de métodos
     public class ContaCorrente
     {
+        // static propriedade da classe
+        public static int TotalContasCriadas { get; private set; }
+
         private int numero_agencia;
         public int Numero_agencia
         {
-            // propriedade que manipula o numero_agencia;
+            // GET / SET propriedade que manipula o numero_agencia;
             get { return this.numero_agencia; }
-            set
+            private set
             {
                 if (value > 0)
                 {
@@ -27,10 +29,14 @@ namespace byteBank.Conta
             }
 
         }
-        private string conta;
-        private double saldo = 100;
 
-        private Cliente titular;
+        //private string conta;
+        // propriedade auto implementada quando não não é interessante fazer validações:
+        public string Conta { get; set; }
+
+        // -----
+        private double saldo = 100;
+        public Cliente Titular { get; set; }
 
 
 
@@ -79,6 +85,8 @@ namespace byteBank.Conta
         //    return "Titular: " + this.titular + " Agencia: " + this.numero_agencia + " Conta: " + this.conta + " Saldo: " + this.saldo;
         //}
 
+
+        // GET E SET de outra forma;
         public void SetSaldo(double valor)
         {
             if (valor < 0)
@@ -95,6 +103,17 @@ namespace byteBank.Conta
         {
             return this.saldo;
         }
+
+
+        // método construtor para campos
+        public ContaCorrente(int numero_agencia, string numero_conta)
+        {
+            this.Numero_agencia = numero_agencia;
+            this.Conta = numero_conta;
+            TotalContasCriadas++;
+        }
+
+
 
     }
 }

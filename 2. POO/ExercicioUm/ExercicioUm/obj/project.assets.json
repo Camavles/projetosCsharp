@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\camil\\source\\repos\\ExercicioUm\\ExercicioUm\\ExercicioUm.csproj",
+      "projectUniqueName": "C:\\Users\\camil\\source\\repos\\2. POO\\ExercicioUm\\ExercicioUm\\ExercicioUm.csproj",
       "projectName": "ExercicioUm",
-      "projectPath": "C:\\Users\\camil\\source\\repos\\ExercicioUm\\ExercicioUm\\ExercicioUm.csproj",
+      "projectPath": "C:\\Users\\camil\\source\\repos\\2. POO\\ExercicioUm\\ExercicioUm\\ExercicioUm.csproj",
       "packagesPath": "C:\\Users\\camil\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\camil\\source\\repos\\ExercicioUm\\ExercicioUm\\obj\\",
+      "outputPath": "C:\\Users\\camil\\source\\repos\\2. POO\\ExercicioUm\\ExercicioUm\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\camil\\AppData\\Roaming\\NuGet\\NuGet.Config",

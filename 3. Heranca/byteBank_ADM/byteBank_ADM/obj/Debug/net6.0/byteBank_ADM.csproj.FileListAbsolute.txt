@@ -1,0 +1,15 @@
+C:\Users\camil\source\repos\3. Heranca\byteBank_ADM\byteBank_ADM\bin\Debug\net6.0\byteBank_ADM.exe
+C:\Users\camil\source\repos\3. Heranca\byteBank_ADM\byteBank_ADM\bin\Debug\net6.0\byteBank_ADM.deps.json
+C:\Users\camil\source\repos\3. Heranca\byteBank_ADM\byteBank_ADM\bin\Debug\net6.0\byteBank_ADM.runtimeconfig.json
+C:\Users\camil\source\repos\3. Heranca\byteBank_ADM\byteBank_ADM\bin\Debug\net6.0\byteBank_ADM.dll
+C:\Users\camil\source\repos\3. Heranca\byteBank_ADM\byteBank_ADM\bin\Debug\net6.0\byteBank_ADM.pdb
+C:\Users\camil\source\repos\3. Heranca\byteBank_ADM\byteBank_ADM\obj\Debug\net6.0\byteBank_ADM.csproj.AssemblyReference.cache
+C:\Users\camil\source\repos\3. Heranca\byteBank_ADM\byteBank_ADM\obj\Debug\net6.0\byteBank_ADM.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\camil\source\repos\3. Heranca\byteBank_ADM\byteBank_ADM\obj\Debug\net6.0\byteBank_ADM.AssemblyInfoInputs.cache
+C:\Users\camil\source\repos\3. Heranca\byteBank_ADM\byteBank_ADM\obj\Debug\net6.0\byteBank_ADM.AssemblyInfo.cs
+C:\Users\camil\source\repos\3. Heranca\byteBank_ADM\byteBank_ADM\obj\Debug\net6.0\byteBank_ADM.csproj.CoreCompileInputs.cache
+C:\Users\camil\source\repos\3. Heranca\byteBank_ADM\byteBank_ADM\obj\Debug\net6.0\byteBank_ADM.dll
+C:\Users\camil\source\repos\3. Heranca\byteBank_ADM\byteBank_ADM\obj\Debug\net6.0\refint\byteBank_ADM.dll
+C:\Users\camil\source\repos\3. Heranca\byteBank_ADM\byteBank_ADM\obj\Debug\net6.0\byteBank_ADM.pdb
+C:\Users\camil\source\repos\3. Heranca\byteBank_ADM\byteBank_ADM\obj\Debug\net6.0\byteBank_ADM.genruntimeconfig.cache
+C:\Users\camil\source\repos\3. Heranca\byteBank_ADM\byteBank_ADM\obj\Debug\net6.0\ref\byteBank_ADM.dll

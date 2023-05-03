@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace byteBank_ADM.Funcionarios
 {
-    public class Funcionario
+    // classe abstrata
+    public abstract class Funcionario
     {
         public string Nome { get; set; }
         public string Cpf { get; private set; }
@@ -14,15 +15,19 @@ namespace byteBank_ADM.Funcionarios
         // utilizando a visibilidade protected;
         public double Salario { get; protected set; }
 
-       
+
         // utilizando o virtual eu consigo dizer q eu posso reecrever esse método pela classe derivada;
-        public virtual double GetBonificacao()
-        {
-            return this.Salario * 0.1 /*+ this.Salario*/;
-        }
+        //public virtual double GetBonificacao()
+        //{
+        //    return this.Salario * 0.1 /*+ this.Salario*/; 
+        //}
 
 
-        //campo static
+        // como é um método abstrato, toda classe que herda esse método tem a obrigação de fazer a implementação;
+        public abstract double GetBonificacao();
+
+
+        //static --> propriedade da classe e não do objeto;
         public static int TotalFuncionarios { get; private set; }
 
         
@@ -32,14 +37,18 @@ namespace byteBank_ADM.Funcionarios
             TotalFuncionarios++;
             this.Cpf = cpf;
             this.Salario = salario;
+
             // testando a ordem de execução; da classe base vem primeiro;
             // Console.WriteLine("Criando um funcionário");
+            //** mesmo sendo uma classe abstrata, ela pode possuir métodos concretos; 
         }
 
-        public virtual void AumentarSalario()
-        {
-            this.Salario *= 1.10;
-        }
+
+        public abstract void AumentarSalario();
+
+        //herança
+ 
+
 
     }
 }

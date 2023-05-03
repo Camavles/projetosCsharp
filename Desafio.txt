@@ -1,0 +1,30 @@
+Desafio:
+
+Agora imagine ter que modelar uma classe de livros com título, autor, ISBN, ano de publicação, estilo literário, número de páginas e país de publicação. Como podemos tornar o ISBN e o título informações obrigatórias, ou seja, algo que a pessoa que cria os objetos da classe precisa passar?
+
+Sua missão, é criar este construtor personalizado para a classe Livro.
+
+
+Desafio:
+
+Nosso sistema interno só valida a informação da senha dos funcionários autenticados. Seria interessante também informarmos um login, não é mesmo?
+
+Sua missão é criar essa propriedade de login e editar o método autenticado para receber também esse parâmetro.
+
+Esta é uma atividade opcional, com a intenção de desafiamos você a praticar C# um pouco mais. Vamos começar?
+
+
+Desafio: 
+
+Agora que você já sabe mais sobre interfaces, precisamos refatorar nosso código para transformar a bonificação em uma interface. A classe que assinar a interface irá implementar seu cálculo de bonificação.
+
+Considere este exercício como opcional, mas ele pode ser muito interessante para colocar em prática o tema interfaces visto na aula. E então, aceita o desafio?
+
+Objetivo do projeto:
+- Um sistema interno de cadastro de funcionarios:
+ - cargos diferentes;
+ - bonificação diferenciada;
+ - atributos básicos: nome, cpf, salario
+
+
+Rever a partir de Classe abstrata;

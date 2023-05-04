@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ExercicioDois.Funcionarios
 {
-    public class Funcionario
+    public abstract class Funcionario
     {
         public string Nome { get; set; }
         public string Cpf { get; private set; }
@@ -21,19 +21,12 @@ namespace ExercicioDois.Funcionarios
         }
 
         // coloquei virtual para poder reescrever um diretor;
-        public virtual double GetBonificacao()
-        {
-            return this.Salario * 0.10;
-        }
-
-        public virtual void AumentarSalario()
-        {
-            this.Salario += this.Salario * 0.1;
-        }
+        // depois transformei o método em abstrato pois a classe tbm é abstrata
+        public abstract double GetBonificacao();
 
 
-        
+        public abstract void AumentarSalario();
 
- 
+
     }
 }

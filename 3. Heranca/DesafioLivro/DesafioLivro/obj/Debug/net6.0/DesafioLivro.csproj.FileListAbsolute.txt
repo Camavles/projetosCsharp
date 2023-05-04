@@ -1,0 +1,15 @@
+C:\Users\camil\source\repos\3. Heranca\DesafioLivro\DesafioLivro\bin\Debug\net6.0\DesafioLivro.exe
+C:\Users\camil\source\repos\3. Heranca\DesafioLivro\DesafioLivro\bin\Debug\net6.0\DesafioLivro.deps.json
+C:\Users\camil\source\repos\3. Heranca\DesafioLivro\DesafioLivro\bin\Debug\net6.0\DesafioLivro.runtimeconfig.json
+C:\Users\camil\source\repos\3. Heranca\DesafioLivro\DesafioLivro\bin\Debug\net6.0\DesafioLivro.dll
+C:\Users\camil\source\repos\3. Heranca\DesafioLivro\DesafioLivro\bin\Debug\net6.0\DesafioLivro.pdb
+C:\Users\camil\source\repos\3. Heranca\DesafioLivro\DesafioLivro\obj\Debug\net6.0\DesafioLivro.csproj.AssemblyReference.cache
+C:\Users\camil\source\repos\3. Heranca\DesafioLivro\DesafioLivro\obj\Debug\net6.0\DesafioLivro.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\camil\source\repos\3. Heranca\DesafioLivro\DesafioLivro\obj\Debug\net6.0\DesafioLivro.AssemblyInfoInputs.cache
+C:\Users\camil\source\repos\3. Heranca\DesafioLivro\DesafioLivro\obj\Debug\net6.0\DesafioLivro.AssemblyInfo.cs
+C:\Users\camil\source\repos\3. Heranca\DesafioLivro\DesafioLivro\obj\Debug\net6.0\DesafioLivro.csproj.CoreCompileInputs.cache
+C:\Users\camil\source\repos\3. Heranca\DesafioLivro\DesafioLivro\obj\Debug\net6.0\DesafioLivro.dll
+C:\Users\camil\source\repos\3. Heranca\DesafioLivro\DesafioLivro\obj\Debug\net6.0\refint\DesafioLivro.dll
+C:\Users\camil\source\repos\3. Heranca\DesafioLivro\DesafioLivro\obj\Debug\net6.0\DesafioLivro.pdb
+C:\Users\camil\source\repos\3. Heranca\DesafioLivro\DesafioLivro\obj\Debug\net6.0\DesafioLivro.genruntimeconfig.cache
+C:\Users\camil\source\repos\3. Heranca\DesafioLivro\DesafioLivro\obj\Debug\net6.0\ref\DesafioLivro.dll

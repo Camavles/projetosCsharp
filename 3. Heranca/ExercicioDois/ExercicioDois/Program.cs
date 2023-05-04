@@ -34,30 +34,30 @@ using ExercicioDois.SistemaInterno;
 
 //CalcularBonificacao();
 UsarSistema();
-void CalcularBonificacao()
-{
-    GerenciadorDeBonificacao gerenciador = new GerenciadorDeBonificacao();
+//void CalcularBonificacao()
+//{
+//    GerenciadorDeBonificacao gerenciador = new GerenciadorDeBonificacao();
 
-    Designer ulisses = new Designer("123456-7");
-    ulisses.Nome = "Ulisses Souza";
+//    Designer ulisses = new Designer("123456-7");
+//    ulisses.Nome = "Ulisses Souza";
 
-    Diretor paula = new Diretor("456789-0");
-    paula.Nome = "Paula Souza";
+//    Diretor paula = new Diretor("456789-0");
+//    paula.Nome = "Paula Souza";
 
-    Auxiliar igor = new Auxiliar("78921-3");
-    igor.Nome = "Igor Dias";
+//    Auxiliar igor = new Auxiliar("78921-3");
+//    igor.Nome = "Igor Dias";
 
-    GerenteDeContas camila = new GerenteDeContas("235869-7");
-    camila.Nome = "Camla Oliveira";
+//    GerenteDeContas camila = new GerenteDeContas("235869-7");
+//    camila.Nome = "Camla Oliveira";
 
-    gerenciador.Registrar(ulisses);
-    gerenciador.Registrar(paula);
-    gerenciador.Registrar(igor);
-    gerenciador.Registrar(camila);
+//    gerenciador.Registrar(ulisses);
+//    gerenciador.Registrar(paula);
+//    gerenciador.Registrar(igor);
+//    gerenciador.Registrar(camila);
 
-    Console.WriteLine("Total de Bonificação: " + gerenciador.TotalBonificacao);
+//    Console.WriteLine("Total de Bonificação: " + gerenciador.TotalBonificacao);
 
-}
+//}
 
 void UsarSistema()
 {
@@ -77,4 +77,6 @@ void UsarSistema()
     caio.Senha = "999";
 
     sistema.Logar(caio, "999");
+
+    //Console.WriteLine(34.40m);
 }

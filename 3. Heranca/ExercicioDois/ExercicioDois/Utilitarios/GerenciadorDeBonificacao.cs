@@ -8,6 +8,9 @@ using System.Threading.Tasks;
 namespace ExercicioDois.GerenciadorDeBonificacao
 {
     // objetivo desssa classe: organizar a bonificação;
+
+
+
     public class GerenciadorDeBonificacao
     {
         public double TotalBonificacao { get; private set; }
@@ -18,6 +21,7 @@ namespace ExercicioDois.GerenciadorDeBonificacao
             this.TotalBonificacao += funcionario.GetBonificacao();
         }
 
-        
+
+
     }
 }

@@ -1,8 +1,10 @@
 ﻿using System;
+using ExercicioDois.GerenciadorDeBonificacao;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+
 
 namespace ExercicioDois.Funcionarios
 {
@@ -21,5 +23,9 @@ namespace ExercicioDois.Funcionarios
         {
             this.Salario *= 1.1;
         }
+
+
+
+
     }
 }

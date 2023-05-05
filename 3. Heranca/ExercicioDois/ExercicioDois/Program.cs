@@ -33,7 +33,7 @@ using ExercicioDois.SistemaInterno;
 // metodo
 
 //CalcularBonificacao();
-UsarSistema();
+//UsarSistema();
 //void CalcularBonificacao()
 //{
 //    GerenciadorDeBonificacao gerenciador = new GerenciadorDeBonificacao();
@@ -59,24 +59,30 @@ UsarSistema();
 
 //}
 
-void UsarSistema()
-{
-    SistemaInterno sistema = new SistemaInterno();
+//void UsarSistema()
+//{
+    //SistemaInterno sistema = new SistemaInterno();
 
-    Diretor ingrid = new Diretor("5137-00");
-    ingrid.Nome = "Ingrid Silveira";
-    ingrid.Senha = "1230";
-    sistema.Logar(ingrid, ingrid.Senha);
+    //Diretor ingrid = new Diretor("5137-00");
+    //ingrid.Nome = "Ingrid Silveira";
+    //ingrid.Senha = "1230";
+    //sistema.Logar(ingrid, ingrid.Senha);
 
-    GerenteDeContas ivone = new GerenteDeContas("98754-12");
-    ivone.Nome = "Ivone Lara";
-    ivone.Senha = "456";
-    sistema.Logar(ivone, "234");
+    //GerenteDeContas ivone = new GerenteDeContas("98754-12");
+    //ivone.Nome = "Ivone Lara";
+    //ivone.Senha = "456";
+    //sistema.Logar(ivone, "234");
 
-    ParceiroComercial caio = new ParceiroComercial();
-    caio.Senha = "999";
+    //ParceiroComercial caio = new ParceiroComercial();
+    //caio.Senha = "999";
 
-    sistema.Logar(caio, "999");
+    //sistema.Logar(caio, "999");
 
     //Console.WriteLine(34.40m);
+//}
+
+
+void TestarBofinicacao()
+{
+
 }

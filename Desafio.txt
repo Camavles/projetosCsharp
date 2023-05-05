@@ -26,5 +26,8 @@ Objetivo do projeto:
  - bonificação diferenciada;
  - atributos básicos: nome, cpf, salario
 
+passo a passo: NO IAUTENTICAVEL
 
-Rever a partir de Classe abstrata;
+eu defini uma propriedade Senha
+
+e um método chamado autenticar que recebe como parametro uma senha

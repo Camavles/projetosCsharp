@@ -4,17 +4,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using ExercicioDois.Utilitarios;
 
 namespace ExercicioDois.Funcionarios
 {
-    public class Auxiliar : Funcionario
+    public class Auxiliar : Funcionario, Bonificacao
     {
         public Auxiliar(string cpf) : base(cpf, 2000)
         {
         }
 
-        public override double GetBonificacao()
+        public double GetBonificacao()
         {
             return this.Salario * 0.2;
         }

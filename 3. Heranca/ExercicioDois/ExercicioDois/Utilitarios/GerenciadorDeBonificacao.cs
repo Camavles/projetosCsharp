@@ -1,4 +1,5 @@
 ﻿using ExercicioDois.Funcionarios;
+using ExercicioDois.Utilitarios;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,6 +9,7 @@ using System.Threading.Tasks;
 namespace ExercicioDois.GerenciadorDeBonificacao
 {
     // objetivo desssa classe: organizar a bonificação;
+    
 
 
 
@@ -16,9 +18,9 @@ namespace ExercicioDois.GerenciadorDeBonificacao
         public double TotalBonificacao { get; private set; }
 
         // recebe um objeto do tipo funcionário e diretor
-        public void Registrar(Funcionario funcionario)
+        public void Registrar(Bonificacao bonificacao)
         {
-            this.TotalBonificacao += funcionario.GetBonificacao();
+            this.TotalBonificacao += bonificacao.GetBonificacao();
         }
 
 

@@ -1,4 +1,5 @@
 ﻿using ExercicioDois.SistemaInterno;
+using ExercicioDois.Utilitarios;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace ExercicioDois.Funcionarios
 {
-    public class GerenteDeContas : FuncionarioAutenticavel
+    public class GerenteDeContas : FuncionarioAutenticavel, IBonificacao
     {
         
 
@@ -16,7 +17,8 @@ namespace ExercicioDois.Funcionarios
         }
 
 
-        public override double GetBonificacao()
+
+        public double GetBonificacao()
         {
             return this.Salario * 0.25;
         }

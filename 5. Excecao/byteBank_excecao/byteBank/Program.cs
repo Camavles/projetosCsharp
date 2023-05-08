@@ -1,7 +1,6 @@
 ﻿using byteBank_excecao;
 using byteBank_excecao.Conta;
 using byteBank_excecao.Titular;
-using byteBank_excecao;
 using System.Numerics;
 using System.Xml;
 
@@ -177,7 +176,6 @@ try
 {
     leitor.LerProximaLinha();
     leitor.LerProximaLinha();
-    
 }
 catch(IOException) 
 {
@@ -185,6 +183,6 @@ catch(IOException)
 }
 finally
 {
-    // ler a próxima linha após achar uma exceção
+    // ler a próxima linha após achar uma exceção;
     leitor.Fechar();
 }

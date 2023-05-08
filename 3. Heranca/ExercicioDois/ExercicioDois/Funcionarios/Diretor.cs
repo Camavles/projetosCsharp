@@ -1,4 +1,5 @@
 ﻿using ExercicioDois.SistemaInterno;
+using ExercicioDois.Utilitarios;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace ExercicioDois.Funcionarios
 {
-    public class Diretor : FuncionarioAutenticavel 
+    public class Diretor : FuncionarioAutenticavel, IBonificacao
     {
 
         // 1. quando eu estou na classe base e crio um construtor; na classe derivada eu preciso fazer a implementação desse construtor;
@@ -20,10 +21,9 @@ namespace ExercicioDois.Funcionarios
         {
         }
 
-
         // 3. com o base.GetBonificacao eu digo que eu to chamando o método base
 
-        public override double GetBonificacao()
+        public double GetBonificacao()
         {
             return this.Salario * 0.5; /*+ base.GetBonificacao()*/;
         }
@@ -33,6 +33,8 @@ namespace ExercicioDois.Funcionarios
             // ou this.Salario *= 1.15;
             this.Salario += this.Salario * 0.15;
         }
+
+        
 
     }
 }

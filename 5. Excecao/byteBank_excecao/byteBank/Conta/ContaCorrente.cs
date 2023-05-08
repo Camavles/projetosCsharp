@@ -82,7 +82,7 @@ namespace byteBank_excecao.Conta
             }
         }
 
-        // para utilizar esse método; eu preciso inicializar cada campo com vaor padrão;
+        // para utilizar esse método; eu preciso inicializar cada campo com valor padrão;
         //public override string ToString()
         //{
         //    return "Titular: " + this.titular + " Agencia: " + this.numero_agencia + " Conta: " + this.conta + " Saldo: " + this.saldo;

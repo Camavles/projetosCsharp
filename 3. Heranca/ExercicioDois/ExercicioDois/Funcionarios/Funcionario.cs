@@ -23,7 +23,8 @@ namespace ExercicioDois.Funcionarios
 
         // coloquei virtual para poder reescrever um diretor;
         // depois transformei o método em abstrato pois a classe tbm é abstrata
-        //public abstract double GetBonificacao();
+        
+       // public abstract double GetBonificacao();
 
 
         public abstract void AumentarSalario();

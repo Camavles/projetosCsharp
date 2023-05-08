@@ -1,8 +1,6 @@
 ﻿
 using ExercicioDois.Funcionarios;
-using ExercicioDois.GerenciadorDeBonificacao;
-using ExercicioDois.Parceria;
-using ExercicioDois.SistemaInterno;
+using ExercicioDois.Utilitarios;
 
 #region
 // trecho relativo a parte de herança
@@ -61,28 +59,44 @@ using ExercicioDois.SistemaInterno;
 
 //void UsarSistema()
 //{
-    //SistemaInterno sistema = new SistemaInterno();
+//SistemaInterno sistema = new SistemaInterno();
 
-    //Diretor ingrid = new Diretor("5137-00");
-    //ingrid.Nome = "Ingrid Silveira";
-    //ingrid.Senha = "1230";
-    //sistema.Logar(ingrid, ingrid.Senha);
+//Diretor ingrid = new Diretor("5137-00");
+//ingrid.Nome = "Ingrid Silveira";
+//ingrid.Senha = "1230";
+//sistema.Logar(ingrid, ingrid.Senha);
 
-    //GerenteDeContas ivone = new GerenteDeContas("98754-12");
-    //ivone.Nome = "Ivone Lara";
-    //ivone.Senha = "456";
-    //sistema.Logar(ivone, "234");
+//GerenteDeContas ivone = new GerenteDeContas("98754-12");
+//ivone.Nome = "Ivone Lara";
+//ivone.Senha = "456";
+//sistema.Logar(ivone, "234");
 
-    //ParceiroComercial caio = new ParceiroComercial();
-    //caio.Senha = "999";
+//ParceiroComercial caio = new ParceiroComercial();
+//caio.Senha = "999";
 
-    //sistema.Logar(caio, "999");
+//sistema.Logar(caio, "999");
 
-    //Console.WriteLine(34.40m);
+//Console.WriteLine(34.40m);
 //}
 
+TestarBofinicacao();
 
 void TestarBofinicacao()
 {
+
+
+
+    Auxiliar camila = new Auxiliar("123.456-00");
+    camila.Nome = "Camila Silva";
+    GerenciadorDeBonificacao gerenciador = new GerenciadorDeBonificacao();
+    gerenciador.Registrar(camila);
+
+   
+    Diretor lili = new Diretor("456.789-00");
+    lili.Nome = "Lili Silveira";
+    gerenciador.Registrar(lili);
+
+    Console.WriteLine(gerenciador.TotalDeBonficacao);
+    
 
 }

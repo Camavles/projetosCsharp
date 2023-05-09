@@ -1,0 +1,3 @@
+Agora que você está trabalhando com Esther na manutenção e evolução do sistema de contas correntes do ByteBank na classe que encapsula as operações sobre uma lista de contas correntes, foi solicitado que você desenvolva um método que retorne a conta corrente com o maior saldo da lista.
+
+Este é um exercício opcional e te desafiamos a criar um método essa nova funcionalidade na classe ListaDeContaCorrente.

@@ -179,17 +179,15 @@ void TestaAraayContasCorrentes()
     listaDeContas.Adicionar(new ContaCorrente(874, "2255-D"));
     listaDeContas.Adicionar(new ContaCorrente(874, "2255-D"));
 
+    var contaAndre = new ContaCorrente(123, "222-X");
+    listaDeContas.Adicionar(contaAndre);
+    listaDeContas.ExibirLista();
+    Console.WriteLine("======");
+    listaDeContas.Remover(contaAndre);
+    listaDeContas.ExibirLista();
 
 }
 
-//TestaAraayContasCorrentes();
+TestaAraayContasCorrentes();
 
-
-TestaSaldo();
-
-void TestaSaldo()
-{
-    ListaDeContasCorrentes lista = new ListaDeContasCorrentes();
-    
-
-}
+// parei me removendo itens 

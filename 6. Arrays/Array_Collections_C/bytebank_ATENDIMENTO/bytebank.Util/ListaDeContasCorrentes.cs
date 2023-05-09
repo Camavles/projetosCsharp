@@ -10,6 +10,9 @@ namespace bytebank_ATENDIMENTO.bytebank.Util
 {
     public class ListaDeContasCorrentes
     {
+
+        // O ARRAY DE CONTAS CORRENTES É UM ARRAY DE OBJETOS;
+
         // defini um campo do tipo ContaCorrente que recebe um array nulo;
         private ContaCorrente[] _itens = null;
 
@@ -52,7 +55,42 @@ namespace bytebank_ATENDIMENTO.bytebank.Util
             _itens = novoArray;
         }
 
-        // parei me removendo itens 
+        
+
+        public void Remover(ContaCorrente conta)
+        {
+            int indiceItem = -1;
+
+            for(int i = 0; i < _proximaPosicao; i++)
+            {
+                ContaCorrente contaAtual = _itens[i];
+
+                if(contaAtual == conta)
+                {
+                    indiceItem = i;
+                    break;
+                }
+            }
+
+            for(int i = indiceItem; i < _proximaPosicao;i++)
+            {
+                _itens[i] = _itens[i + 1];
+            }
+
+            _proximaPosicao--;
+        }
+
+        public void ExibirLista()
+        {
+            for(int i = 0; i < _itens.Length;i++)
+            {
+                if (_itens[i] == null)
+                {
+                    var conta = _itens[i];
+                    Console.WriteLine($"Indice [{i}] = Conta: {conta.Conta} - Nº da Agência: {conta.Numero_agencia}");
+                }
+            }
+        }
 
     }
 }

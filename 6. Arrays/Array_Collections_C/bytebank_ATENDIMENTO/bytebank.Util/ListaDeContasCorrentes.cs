@@ -57,28 +57,28 @@ namespace bytebank_ATENDIMENTO.bytebank.Util
 
         
 
-        public void Remover(ContaCorrente conta)
-        {
-            int indiceItem = -1;
+        //public void Remover(ContaCorrente conta)
+        //{
+        //    int indiceItem = -1;
 
-            for(int i = 0; i < _proximaPosicao; i++)
-            {
-                ContaCorrente contaAtual = _itens[i];
+        //    for(int i = 0; i < _proximaPosicao; i++)
+        //    {
+        //        ContaCorrente contaAtual = _itens[i];
 
-                if(contaAtual == conta)
-                {
-                    indiceItem = i;
-                    break;
-                }
-            }
+        //        if(contaAtual == conta)
+        //        {
+        //            indiceItem = i;
+        //            break;
+        //        }
+        //    }
 
-            for(int i = indiceItem; i < _proximaPosicao;i++)
-            {
-                _itens[i] = _itens[i + 1];
-            }
+        //    for(int i = indiceItem; i < _proximaPosicao;i++)
+        //    {
+        //        _itens[i] = _itens[i + 1];
+        //    }
 
-            _proximaPosicao--;
-        }
+        //    _proximaPosicao--;
+        //}
 
         public void ExibirLista()
         {

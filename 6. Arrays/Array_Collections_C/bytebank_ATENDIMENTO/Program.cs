@@ -11,183 +11,131 @@ using System.Reflection;
 using System.Security.Cryptography.X509Certificates;
 using System.Threading.Channels;
 
-// 1º primeira parte
-#region
-void TestarArrayInt()
+
+
+TestarMetodos();
+void TestarMetodos()
 {
-    int[] idades = new int[5];
-    idades[0] = 30;
-    idades[1] = 40;
-    idades[2] = 17;
-    idades[3] = 21;
-    idades[4] = 18;
+    // ***********************************************   1ª PARTE: Montando um array;   ************************************************
 
-    Console.WriteLine($"Tamanho do Array {idades.Length}");
+    //int[] idades = new int[5];
+    //idades[0] = 30;
+    //idades[1] = 40;
+    //idades[2] = 17;
+    //idades[3] = 21;
+    //idades[4] = 18;
 
-    double acumulador = 0;
-    ;
+    //Console.WriteLine($"Essa é a extensão da sua lista: {idades.Length}");
 
-    for (int i = 0; i < idades.Length; i++)
-    {
-        Console.WriteLine($" Indíce {i} = {idades[i]}");
-        acumulador += idades[i];
+    //int acumulador = 0;
+    //double media;
 
-    }
-
-    double media = acumulador / idades.Length;
-    Console.WriteLine("A média é: " + media);
-}
-
-
-void TestaBuscarPalavra()
-{
-    string[] arrayDePalavras = new string[5];
-
-    for (int i = 0; i < arrayDePalavras.Length; i++)
-    {
-        Console.Write($"Digite {i + 1} Palavra: ");
-        arrayDePalavras[i] = Console.ReadLine();
-    }
-
-    Console.Write("Digite palavra a ser encontrada: ");
-    var busca = Console.ReadLine();
-
-    foreach (string palavra in arrayDePalavras)
-    {
-        if (palavra.Equals(busca)) // como já estou denrto da array, posso usar um método de string
-        {
-            Console.WriteLine("Palavra encontrada = " + busca);
-            break;
-
-        }
-    }
-
-}
-
-// classe array;
-//Array amostra = Array.CreateInstance(typeof(double), 5);
-//amostra.SetValue(5.9, 0);
-//amostra.SetValue(1.8, 1);
-//amostra.SetValue(7.1, 2);
-//amostra.SetValue(10, 3);
-//amostra.SetValue(6.9, 4);
-
-//TestaMediana(amostra);
-void TestaMediana(Array array)
-{
-    if ((array == null) || (array.Length == 0))
-    {
-        Console.WriteLine("Array está vazio ou nulo!");
-    }
-
-    double[] numerosOrdenados = (double[])array.Clone();
-    Array.Sort(numerosOrdenados);
-
-    int tamanho = numerosOrdenados.Length;
-    int meio = tamanho / 2;
-    double mediana = (tamanho % 2 != 0) ? numerosOrdenados[meio] :
-         numerosOrdenados[meio] + numerosOrdenados[meio - 1] / 2;
-    Console.WriteLine($"Com base na amostra a media é = {mediana}");
-
-}
-
-
-//int[] valores = { 10, 58, 36, 47 };
-
-//for(int i = 0; i < valores.Length; i++)
-//{
-//    Console.WriteLine(valores[i]);
-//}
-
-
-
-Array valores = Array.CreateInstance(typeof(double), 5);
-valores.SetValue(1.5, 0);
-valores.SetValue(2.2, 1);
-valores.SetValue(3.3, 2);
-valores.SetValue(4.4, 3);
-valores.SetValue(5.5, 4);
-
-//TestaMedia(valores);
-
-void TestaMedia(Array array)
-{
-    double acumulador = 0;
-
-    foreach(double item in array)
-    {
-        acumulador += item;
-    }
-
-    double media = acumulador / array.Length;
-    Console.WriteLine("Está é a média = " + media);
-}
-
-
-
-// formas de criar uma array:
-// tipo1:
-//int[] idades = new int[4];
-//idades[0] = 20;
-//idades[1] = 30;
-//idades[2] = 40;
-//idades[3] = 50;
-
-////tipo 2:
-//Array palavras = Array.CreateInstance(typeof(string), 4);
-//palavras.SetValue("Olá", 0); // preciso passar o valor e a posição;
-//palavras.SetValue("meu", 1);
-//palavras.SetValue("nome", 2);
-//palavras.SetValue("é", 3);
-//palavras.SetValue("Camila", 4);
-
-//// tipo 3:
-//string[] frases = { "camila", "é", "inteligênte!" };
-//int[] numeros = { 1, 2, 3, 4 };
-
-#endregion
-
-
-// 2º parte
-
-void TestaAraayContasCorrentes()
-{
-
-    //ContaCorrente[] listaContas = new ContaCorrente[]
+    //for(int i = 0; i < idades.Length; i++)
     //{
-    //    new ContaCorrente(874, "5456-A"),
-    //    new ContaCorrente(874, "5557-B"),
-    //    new ContaCorrente(874, "5658-C")
-    //};
-
-    //for(int i = 0; i < listaContas.Length; i++)
-    //{
-    //    // esse ContaCorrente só define o tipo da variável contaAtual; ou seja, um objeto que recebe essa lista 
-    //    ContaCorrente contaAtual = listaContas[i];
-    //    Console.WriteLine($"Indíce {i} - Conta {contaAtual.Conta}");
-
-    //    // outra possibilidade
-    //    //Console.WriteLine($"Número da Conta - {listaContas[i].Conta}");
-        
+    //    Console.WriteLine($"Idade = {idades[i]} Indíce = {i} ");
+    //    acumulador += idades[i];
     //}
 
-    ListaDeContasCorrentes listaDeContas = new ListaDeContasCorrentes();
-    listaDeContas.Adicionar(new ContaCorrente(874, "5456-A"));
-    listaDeContas.Adicionar(new ContaCorrente(874, "5557-B"));
-    listaDeContas.Adicionar(new ContaCorrente(874, "5658-C"));
-    listaDeContas.Adicionar(new ContaCorrente(874, "2255-D"));
-    listaDeContas.Adicionar(new ContaCorrente(874, "2255-D"));
-    listaDeContas.Adicionar(new ContaCorrente(874, "2255-D"));
+    //media = acumulador / idades.Length;
+    //Console.WriteLine($"Sua média é {media}");
 
-    var contaAndre = new ContaCorrente(123, "222-X");
-    listaDeContas.Adicionar(contaAndre);
-    listaDeContas.ExibirLista();
-    Console.WriteLine("======");
-    listaDeContas.Remover(contaAndre);
-    listaDeContas.ExibirLista();
+
+    // *********************************************    2ª PARTE: Array de Strings;    ************************************************
+
+
+    //string[] arrayDePalavras = new string[5];
+
+    //for(int i = 0; i < arrayDePalavras.Length; i++)
+    //{
+    //    Console.Write("Informe uma palavra: ");
+    //    arrayDePalavras[i] = Console.ReadLine();
+    //    //Console.ReadLine() --> retorna uma string
+    //}
+
+
+    //Console.WriteLine("Digite uma palavra a ser buscada!");
+    //var busca =  Console.ReadLine(); // bota dentro da minha variavel a palavra que eu digitei;
+
+    //foreach(string item in arrayDePalavras)
+    //{
+    //    if(item.Equals(busca))
+    //    {
+    //        Console.WriteLine($"Palavra encontrada = {busca} ");
+    //        break;
+    //    }
+    //}
+
+    // ************************************   3ª PARTE: classe Array;   *************************************
+
+    /* Poderia fazer:
+     * double[] amostra = new double[5];
+     * amostra[0] = 5.9;
+     * amostra[1] = 1.8;
+     * 
+     * ou 
+     * double[] amostra = new double[5];
+     * amostra.SetValue(5.9, 0);
+     * amostra.SetValue(1.8, 1);
+     * 
+    
+     */
+    //Array amostra = Array.CreateInstance(typeof(double), 5);
+    //amostra.SetValue(5.9, 0);
+    //amostra.SetValue(1.8, 1);
+    //amostra.SetValue(7.1, 2);
+    //amostra.SetValue(10, 3);
+    //amostra.SetValue(6.9, 4);
+
+    //TestaMediana(amostra);
+    //void TestaMediana(Array array)
+    //{
+    //    if(array == null || array.Length == 0)
+    //    {
+    //        Console.WriteLine("Array para cálculo da mediana está vazio ou nulo!");
+    //    }
+
+    //    //FIZ O CAST PARA TRANSFORMAR ESSA ARRAY EM DOUBLE JÁ QUE ESTAVA VINDO OBJECT
+    //    double[] numerosOrdem = (double[])array.Clone();
+
+
+    //    // Chamo a classe e o método e passo a minha array;
+    //    Array.Sort(numerosOrdem); // modifica a array;
+
+    //    int tamanho = numerosOrdem.Length;
+    //    int meio = tamanho / 2;
+    //    // ?true 
+    //    // : else
+    //    double mediana = (tamanho % 2 != 0) ? numerosOrdem[meio] : (numerosOrdem[meio] + numerosOrdem[meio - 1]) / 2;
+    //    Console.WriteLine($"Com base na amostra a mediana é = {mediana}");
+
+
+    //}
+
+    //******************************************************** 4ª PARTE:  ARRAY DE OBJETOS; *****************************************************
+    // Sempre tomar cuidado em percorrer a array por completo
+    
+
+    TestaArrayContas();
+
+    void TestaArrayContas()
+    {
+        ContaCorrente[] listaDeContas = new ContaCorrente[]
+        {
+            new ContaCorrente(14, "5654-A"),
+            new ContaCorrente(15, "5755-B"),
+            new ContaCorrente(16, "5856-C")
+        };
+
+
+        for(int i = 0; i < listaDeContas.Length; i++)
+        {
+            // outra forma: ContaCorrente contaAtual = listaDeContas[i];
+            Console.WriteLine($"Agência {listaDeContas[i].Conta}, Conta: {listaDeContas[i].Numero_agencia} ");
+        }
+       
+        // classe ListaDeContas
+    }
+
 
 }
 
-TestaAraayContasCorrentes();
-
-// parei me removendo itens 

@@ -1,7 +1,10 @@
 ﻿using Exercicios.Cliente;
+using Exercicios.Excecoes;
+using Exercicios.Utilidades;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -18,54 +21,80 @@ namespace Exercicios.Contas
 
         public double Saldo { get; private set; }
 
+        public static int TotalDeContas { get; private set; }
+
+        public static double TaxaOperacao { get; private set; }
 
         //Construtor com 
-        public ContaCorrente(int numero_agencia, string conta) 
+        public ContaCorrente(int numero_agencia, string conta)
         {
-            this.Numero_agencia = numero_agencia;
+
+            if (numero_agencia > 0)
+            {
+                this.Numero_agencia = numero_agencia;
+            }
+            else
+            {
+                throw new ArgumentException("Erro! Não é possível ter o número de conta menor que zero!", nameof(numero_agencia));
+            }
+            
             this.Conta = conta;
+
+            TotalDeContas++;
+            TaxaOperacao = 30;
+            TaxaOperacao = TaxaOperacao / TotalDeContas;
+            
         }
 
 
         public void Depositar(double valor)
         {
-           this.Saldo += valor;
-
-        }
-
-        public bool Sacar(double valor)
-        {
-            if(valor <= this.Saldo)
+            if (valor > 0)
             {
-                this.Saldo -= valor;
-                Console.WriteLine("Operação realizada com sucesso!");
-                return true;
+                this.Saldo += valor;
             }
             else
             {
-
-                return false;
+                throw new OperacoesException("Erro! Não é possível depositar valor negativo ou igual a zero!");
             }
-            
+
+
         }
 
-        public bool Transferir(ContaCorrente destino, double valor)
+        public void Sacar(double valor)
         {
-            if(this.Saldo >= valor )
+            if (valor <= this.Saldo)
+            {
+                this.Saldo -= valor;
+                Console.WriteLine("Operação realizada com sucesso!");
+               
+            }
+            else
+            {
+                // também poderia utilizar o argument execption
+                throw new OperacoesException("Erro! Não é possível realizar essa operação!");
+            }
+
+        }
+
+        public void Transferir(ContaCorrente destino, double valor)
+        {
+            if (this.Saldo > valor && this.Saldo > 0)
             {
                 this.Saldo -= valor;
                 destino.Saldo += valor;
                 Console.WriteLine("Operação realizada com sucesso!");
-                return true;
                 
+
             }
             else
             {
-                return false;
+                throw new OperacoesException("Erro! Não é possível transferir valores negativos!");
             }
 
         }
 
-
+        
+ 
     }
 }

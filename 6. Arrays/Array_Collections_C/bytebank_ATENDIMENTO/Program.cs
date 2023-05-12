@@ -181,7 +181,7 @@ void TestarMetodos()
 
 ArrayList _listaDeContas = new ArrayList();
 
-AtendimentoCliente();
+//AtendimentoCliente();
 
 void AtendimentoCliente()
 {
@@ -278,3 +278,5 @@ void CadastrarConta()
         Console.ReadKey();
     }
 }
+
+

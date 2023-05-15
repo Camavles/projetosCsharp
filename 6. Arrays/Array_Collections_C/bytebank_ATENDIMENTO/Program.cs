@@ -171,7 +171,7 @@ void TestarMetodos()
     //    }
 
     //}
-    
+
 }
 
 #endregion
@@ -186,7 +186,7 @@ ArrayList _listaDeContas = new ArrayList();
 void AtendimentoCliente()
 {
     char opcao = '0';
-    while (opcao !='6')
+    while (opcao != '6')
     {
 
         Console.Clear();
@@ -202,11 +202,13 @@ void AtendimentoCliente()
         Console.WriteLine("\n\n");
         Console.WriteLine("Digite a opção desejada: ");
         opcao = Console.ReadLine()[0];
-        switch(opcao)
+        switch (opcao)
         {
-            case '1': CadastrarConta();
+            case '1':
+                CadastrarConta();
                 break;
-            case '2': ListarContas();
+            case '2':
+                ListarContas();
                 break;
             default:
                 Console.WriteLine("Opção não implementada!");
@@ -223,13 +225,13 @@ void ListarContas()
     Console.WriteLine("===     LISTA DE CONTAS     ===");
     Console.WriteLine("===============================");
     Console.WriteLine("\n");
-    if(_listaDeContas.Count <= 0)
+    if (_listaDeContas.Count <= 0)
     {
         Console.WriteLine("... Não há contas cadastradas! ...");
         Console.ReadKey();
         return;
     }
-    foreach (ContaCorrente item in _listaDeContas) 
+    foreach (ContaCorrente item in _listaDeContas)
     {
         Console.WriteLine("===  Dados da Conta  ===");
         Console.WriteLine("Número da Conta : " + item.Conta);
@@ -240,7 +242,7 @@ void ListarContas()
         Console.WriteLine(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
         Console.ReadKey();
     }
-    
+
 }
 
 void CadastrarConta()
@@ -280,3 +282,34 @@ void CadastrarConta()
 }
 
 
+List<ContaCorrente> contas = new List<ContaCorrente>()
+       {
+            new ContaCorrente(14, "5654-A"),
+            new ContaCorrente(15, "5755-B"),
+            new ContaCorrente(16, "5856-C")
+       };
+
+
+
+// funcionou!!!
+
+void Imprimir(List<ContaCorrente> contas)
+{
+    Console.Clear();
+    for (int i = 0; i < contas.Count; i++)
+    {
+        contas[i].Saldo = (contas[i].Saldo + 20) / (i + 1);
+        
+    }
+    contas.Sort((este, outro) => este.Saldo.CompareTo(outro.Saldo));
+    
+    foreach(var conta in contas)
+    {
+        Console.WriteLine(conta.Saldo);
+    }
+}
+
+
+
+Console.WriteLine();
+Imprimir(contas);

@@ -20,7 +20,7 @@ namespace ListaDeObjetos
 
         private string nome;
         private string nomeInstrutor;
-
+        
         public Curso(string nome, string nomeInstrutor)
         {
             this.nome = nome;
@@ -45,6 +45,32 @@ namespace ListaDeObjetos
         public void Adiciona(Aula aula)
         {
             this.aulas.Add(aula);
+        }
+
+        public int TempoTotal
+        {
+            get
+            {
+                // uma fora de fazer
+                //int total = 0;
+
+                //foreach(var aula in aulas)
+                //{
+                //    total += aula.Tempo;
+                //}
+
+                //return total;
+                // LINQ = Language Integrated Query 
+                // Consulta Integrada à Linguagem -> faz consulta em cima de coleções;
+                // retorne para a minha coleção de aula a soma dos tempos de cada aula;
+                return aulas.Sum(aula => aula.Tempo);
+            }
+        }
+
+
+        public override string ToString()
+        {
+            return $"Curso: {nome}, Tempo: {TempoTotal}, Aulas: {string.Join(",", aulas)}";
         }
     }
 }

@@ -9,6 +9,20 @@ namespace ListaDeObjetos
 {
     public class Curso
     {
+
+        private ISet<Aluno> alunos = new HashSet<Aluno>();
+
+        public IList<Aluno> Alunos 
+        {
+            get
+            {
+
+                return new ReadOnlyCollection<Aluno>(alunos.ToList());
+            }
+        }
+
+   
+
         private IList<Aula> aulas;
 
         
@@ -71,6 +85,16 @@ namespace ListaDeObjetos
         public override string ToString()
         {
             return $"Curso: {nome}, Tempo: {TempoTotal}, Aulas: {string.Join(",", aulas)}";
+        }
+
+        public void Matricula(Aluno aluno)
+        {
+            alunos.Add(aluno);
+        }
+
+        public bool EstaMatriculado(Aluno aluno)
+        {
+            return alunos.Contains(aluno);
         }
     }
 }

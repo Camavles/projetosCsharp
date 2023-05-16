@@ -38,42 +38,121 @@ using System.Collections.Immutable;
 // *********************************** 2ª PARTE -> LISTA SOMENTE LEITURA  ******************************************
 
 // mudei o método para IList, após implementar o ReadOnlyCollection
-void Imprimir(IList<Aula> aulas)
+//void Imprimir(IList<Aula> aulas)
+//{
+
+//    Console.Clear();
+
+//    foreach (var aula in aulas)
+//    {
+//        Console.WriteLine(aula);
+//    }
+
+//}
+
+
+//Curso cSharpColecoes = new Curso("C# Collections", "Marcelo Oliveira");
+//// code smells - estou manipulando diretamente os campos de uma classe;
+//// exposição indecente 
+//cSharpColecoes.Adiciona(new Aula("Working with lists", 21));
+
+//Imprimir(cSharpColecoes.Aulas);
+
+//cSharpColecoes.Adiciona(new Aula("Criando uma Aula", 20));
+//cSharpColecoes.Adiciona(new Aula("Modelando com Coleções", 19));
+
+//Imprimir(cSharpColecoes.Aulas);
+
+////cSharpColecoes.Aulas.Sort();
+//// Por que a lista copiada é uma lista que ue posso modificar?
+//List<Aula> aulasCopiadas = new List<Aula>(cSharpColecoes.Aulas);
+
+////ordenar a cópia
+//aulasCopiadas.Sort();
+
+//Imprimir(aulasCopiadas);
+
+//// Totalizar tempo do curso;
+//Console.WriteLine(cSharpColecoes.TempoTotal);
+
+//// imprimir os deltalhes do curso:
+//Console.WriteLine(cSharpColecoes);
+
+//************************************************************* 3ª PARTE: CONJUNTOS *****************************************************************
+// Duas propriedades do Set;
+// 1. Não permite duplicidade
+// 2. Não são mantidos em ordem específica;
+
+//ISet<string> alunos = new HashSet<string>();
+//alunos.Add("Vanessa Tonini");
+//alunos.Add("Ana Losnak");
+//alunos.Add("Rafael Nercessian");
+
+//Console.WriteLine(alunos);
+//Console.WriteLine(string.Join(",", alunos));
+
+//// Diferenças entre um conjunto e listas?
+//alunos.Add("Priscila Stuani");
+//alunos.Add("Rafael Rollo");
+//alunos.Add("Fabio Gushiken");
+//Console.WriteLine(string.Join(",", alunos));
+
+//// removendo a ana e colocando o marcelo
+//alunos.Remove("Ana Losnak");
+//alunos.Add("Marcelo Oliveira");
+//Console.WriteLine(string.Join(",", alunos));
+
+//// adicionando o mesmo aluno; o conjunto ignora e não adiciona
+//alunos.Add("Fabio Gushiken");
+//Console.WriteLine(string.Join(",", alunos));
+
+//// desempenho de HashSet x List: escalabilidade x memória --> ele consome muita memória
+//// passei como parametro alunos que popula o alunosLista;
+//List<string> alunosLista = new List<string>(alunos);
+//alunosLista.Sort();
+//Console.WriteLine(string.Join(",", alunosLista));
+//;
+
+
+// ********************************************** 4ª PARTE: JUNÇÃO ENTRE CONJUNTOS E LISTAS *********************************************
+Curso cSharpColecoes = new Curso("C# Coleções", "Marcelo Oliveira");
+cSharpColecoes.Adiciona(new Aula("Trabalhando com Listas", 21));
+cSharpColecoes.Adiciona(new Aula("Criando uma Aula", 20));
+cSharpColecoes.Adiciona(new Aula("Modelando com Coleções", 24));
+
+Aluno a1 = new Aluno("Vanessa Tonini", 34672);
+Aluno a2 = new Aluno("Ana Losnak", 5617);
+Aluno a3 = new Aluno("Rafael Nercessian", 17645);
+
+cSharpColecoes.Matricula(a1);
+cSharpColecoes.Matricula(a2);
+cSharpColecoes.Matricula(a3);
+
+foreach(var aluno in cSharpColecoes.Alunos)
 {
-
-    Console.Clear();
-
-    foreach (var aula in aulas)
-    {
-        Console.WriteLine(aula);
-    }
-
+    Console.WriteLine(aluno);
 }
 
+// o aluno está matriculado ou não?
+Console.WriteLine($"O(a) aluno(a) {a1.Nome} está matriculado(a)?");
+Console.WriteLine(cSharpColecoes.EstaMatriculado(a1));
 
-Curso cSharpColecoes = new Curso("C# Collections", "Marcelo Oliveira");
-// code smells - estou manipulando diretamente os campos de uma classe;
-// exposição indecente 
-cSharpColecoes.Adiciona(new Aula("Working with lists", 21));
+// criei uma nova instacia com informações que já tinham;
+Aluno tonini = new Aluno("Vanessa Tonini", 34672);
 
-Imprimir(cSharpColecoes.Aulas);
+Console.WriteLine(cSharpColecoes.EstaMatriculado(tonini));
+Console.WriteLine();
 
-cSharpColecoes.Adiciona(new Aula("Criando uma Aula", 20));
-cSharpColecoes.Adiciona(new Aula("Modelando com Coleções", 19));
+//fiz uma verificação:
+// ele não reconhece essa comparação como true, pq os espaços na memória são diferentes
+// a referencia é diferente, mas o tipo de objeto é o mesmo.
+//Aluno tonini = a1; aqui dá true
+Console.WriteLine("Aluno a1 é igual a tonini");
+Console.WriteLine(a1 == tonini);
+Console.WriteLine();
 
-Imprimir(cSharpColecoes.Aulas);
+// comparando as informações/ valores;
+Console.WriteLine("a1 é equals a Tonini");
+Console.WriteLine(a1.Equals(tonini));
 
-//cSharpColecoes.Aulas.Sort();
-// Por que a lista copiada é uma lista que ue posso modificar?
-List<Aula> aulasCopiadas = new List<Aula>(cSharpColecoes.Aulas);
 
-//ordenar a cópia
-aulasCopiadas.Sort();
-
-Imprimir(aulasCopiadas);
-
-// Totalizar tempo do curso;
-Console.WriteLine(cSharpColecoes.TempoTotal);
-
-// imprimir os deltalhes do curso:
-Console.WriteLine(cSharpColecoes);

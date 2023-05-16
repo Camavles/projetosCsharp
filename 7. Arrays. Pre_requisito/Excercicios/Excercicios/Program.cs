@@ -33,7 +33,5 @@ void Imprimir(List<Aula> lista)
 Imprimir(cSharp.Aulas);
 
 // essa expressão é para quando eu quiser comprar uma propriedade/atributo da minha classe; mas se eu quiser comparar outro campo/atributo
-// entender essa parte do icomparable;
-// rever aula. 
 cSharp.Aulas.Sort((este, outro) => este.Tempo.CompareTo(outro.Tempo));
 Imprimir(cSharp.Aulas);

@@ -21,6 +21,7 @@ namespace ListaDeObjetos
         public string Titulo { get { return titulo; } set { titulo = value; } }
         public int Tempo { get { return tempo; } set { tempo = value; } }
 
+        // IComparable é uma forma de fazer comparaç~eos mexendo diretamente na classe;
         public int CompareTo(object? obj)
         {
             Aula that = obj as Aula;

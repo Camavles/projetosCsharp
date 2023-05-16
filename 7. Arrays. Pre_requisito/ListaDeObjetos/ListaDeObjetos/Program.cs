@@ -128,7 +128,7 @@ cSharpColecoes.Matricula(a1);
 cSharpColecoes.Matricula(a2);
 cSharpColecoes.Matricula(a3);
 
-foreach(var aluno in cSharpColecoes.Alunos)
+foreach (var aluno in cSharpColecoes.Alunos)
 {
     Console.WriteLine(aluno);
 }
@@ -154,5 +154,9 @@ Console.WriteLine();
 // comparando as informações/ valores;
 Console.WriteLine("a1 é equals a Tonini");
 Console.WriteLine(a1.Equals(tonini));
+Console.Clear();
 
-
+//********************************************* 5ª PARTE: DICIONÁRIOS *******************************************************
+Console.WriteLine("Quem é o aluno com a matricula 5617?");
+Aluno aluno57 = cSharpColecoes.BuscaMatriculado(5617);
+Console.WriteLine("Aluno 5617: " + aluno57);

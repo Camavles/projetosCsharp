@@ -30,8 +30,37 @@ void Imprimir(List<Aula> lista)
 }
 
 
-Imprimir(cSharp.Aulas);
+//Imprimir(cSharp.Aulas);
 
-// essa expressão é para quando eu quiser comprar uma propriedade/atributo da minha classe; mas se eu quiser comparar outro campo/atributo
-cSharp.Aulas.Sort((este, outro) => este.Tempo.CompareTo(outro.Tempo));
-Imprimir(cSharp.Aulas);
+// essa expressão é para quando eu quiser comprar uma propriedade/atributo da minha classe sem modificar a classe;
+//cSharp.Aulas.Sort((este, outro) => este.Tempo.CompareTo(outro.Tempo));
+//Imprimir(cSharp.Aulas);
+
+// sort() após mexer na classe;
+cSharp.Aulas.Sort();
+//Imprimir(cSharp.Aulas);
+
+
+
+cSharp.Matricula(new Aluno("Camila Alves", 5556));
+cSharp.Matricula(new Aluno("Raphael Vieira", 5656));
+
+Aluno a3 = new Aluno("José Ribeiro", 2023);
+Aluno a4 = new Aluno("Manoel Silva", 2024);
+
+cSharp.Matricula(a3);
+cSharp.Matricula(a4);
+
+// comparação com equals
+Aluno zezinho = new Aluno("José Ribeiro", 2023);
+
+// esse foreach só funcionou pq eu escrivi um override no ToString();
+//foreach(var aluno in cSharp.Alunos)
+//{
+//    Console.WriteLine(aluno);
+//}
+
+Console.WriteLine("José e Zenhinho são iguais?");
+Console.WriteLine();
+//estou comparando os nomes;
+Console.WriteLine(a3.Equals(zezinho));

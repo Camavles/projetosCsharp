@@ -96,5 +96,17 @@ namespace ListaDeObjetos
         {
             return alunos.Contains(aluno);
         }
+
+        internal Aluno BuscaMatriculado(int numeroMatricula)
+        {
+            foreach(var aluno in alunos)
+            {
+                if(aluno.NumeroMatricula == numeroMatricula)
+                {
+                    return aluno;
+                }
+            }
+            throw new Exception("Matricula não encotrada!" + numeroMatricula);
+        }
     }
 }

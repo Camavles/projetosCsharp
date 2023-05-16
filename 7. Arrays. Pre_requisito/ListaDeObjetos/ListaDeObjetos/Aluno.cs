@@ -35,7 +35,7 @@ namespace ListaDeObjetos
 
         public override string ToString()
         {
-            return $"Nome: {nome}, Matricula {numeroMatricula}";
+            return $"[Nome: {nome}, Matricula {numeroMatricula}]";
         }
 
         public override bool Equals(object? obj)

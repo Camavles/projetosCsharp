@@ -1,6 +1,6 @@
 ﻿namespace bytebank.Modelos.Conta
 {
-    public class ContaCorrente:IComparable<ContaCorrente>
+    public class ContaCorrente /*: IComparable<ContaCorrente>*/
     {     
        
         public Cliente Titular{get;set;}

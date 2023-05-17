@@ -292,18 +292,26 @@ List<ContaCorrente> contas = new List<ContaCorrente>()
 
 
 // funcionou!!!
-
 void Imprimir(List<ContaCorrente> contas)
 {
     Console.Clear();
     for (int i = 0; i < contas.Count; i++)
     {
         contas[i].Saldo = (contas[i].Saldo + 20) / (i + 1);
-        
+
     }
     contas.Sort((este, outro) => este.Saldo.CompareTo(outro.Saldo));
-    
-    foreach(var conta in contas)
+
+    var maiorSaldo = contas.Last();
+    Console.WriteLine($"Imprimindo as informações de conta {maiorSaldo}");
+    Console.WriteLine();
+
+    Console.WriteLine($"Imprimindo apenas o maior Saldo ${maiorSaldo.Saldo}");
+    Console.WriteLine();
+
+    Console.WriteLine("Testando a ordenação");
+
+    foreach (var conta in contas)
     {
         Console.WriteLine(conta.Saldo);
     }
@@ -311,5 +319,11 @@ void Imprimir(List<ContaCorrente> contas)
 
 
 
+
+
+
 Console.WriteLine();
 Imprimir(contas);
+
+
+

@@ -1,0 +1,15 @@
+C:\Users\camil\source\repos\7. Arrays. Pre_requisito\Stack\Stack\bin\Debug\net6.0\Stack.exe
+C:\Users\camil\source\repos\7. Arrays. Pre_requisito\Stack\Stack\bin\Debug\net6.0\Stack.deps.json
+C:\Users\camil\source\repos\7. Arrays. Pre_requisito\Stack\Stack\bin\Debug\net6.0\Stack.runtimeconfig.json
+C:\Users\camil\source\repos\7. Arrays. Pre_requisito\Stack\Stack\bin\Debug\net6.0\Stack.dll
+C:\Users\camil\source\repos\7. Arrays. Pre_requisito\Stack\Stack\bin\Debug\net6.0\Stack.pdb
+C:\Users\camil\source\repos\7. Arrays. Pre_requisito\Stack\Stack\obj\Debug\net6.0\Stack.csproj.AssemblyReference.cache
+C:\Users\camil\source\repos\7. Arrays. Pre_requisito\Stack\Stack\obj\Debug\net6.0\Stack.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\camil\source\repos\7. Arrays. Pre_requisito\Stack\Stack\obj\Debug\net6.0\Stack.AssemblyInfoInputs.cache
+C:\Users\camil\source\repos\7. Arrays. Pre_requisito\Stack\Stack\obj\Debug\net6.0\Stack.AssemblyInfo.cs
+C:\Users\camil\source\repos\7. Arrays. Pre_requisito\Stack\Stack\obj\Debug\net6.0\Stack.csproj.CoreCompileInputs.cache
+C:\Users\camil\source\repos\7. Arrays. Pre_requisito\Stack\Stack\obj\Debug\net6.0\Stack.dll
+C:\Users\camil\source\repos\7. Arrays. Pre_requisito\Stack\Stack\obj\Debug\net6.0\refint\Stack.dll
+C:\Users\camil\source\repos\7. Arrays. Pre_requisito\Stack\Stack\obj\Debug\net6.0\Stack.pdb
+C:\Users\camil\source\repos\7. Arrays. Pre_requisito\Stack\Stack\obj\Debug\net6.0\Stack.genruntimeconfig.cache
+C:\Users\camil\source\repos\7. Arrays. Pre_requisito\Stack\Stack\obj\Debug\net6.0\ref\Stack.dll

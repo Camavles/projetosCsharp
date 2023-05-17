@@ -158,5 +158,19 @@ Console.Clear();
 
 //********************************************* 5ª PARTE: DICIONÁRIOS *******************************************************
 Console.WriteLine("Quem é o aluno com a matricula 5617?");
+// Busca usando HashSet
 Aluno aluno57 = cSharpColecoes.BuscaMatriculado(5617);
 Console.WriteLine("Aluno 5617: " + aluno57);
+// Será que essa busca é eficiente? Será que pode ser melhorada?
+// dicionário permite associar uma chave(matrícula) a um valor(aluno)
+// implementando um dicionário
+// Busca através do dicionário;
+Console.WriteLine(cSharpColecoes.BuscaMatriculado(5618)); // buscando alguém que não existe
+
+// subistituindo o valor de uma chave; 
+Aluno fabio = new Aluno("Fabio Carreira", 5617);
+//cSharpColecoes.Matricula(fabio);
+cSharpColecoes.SubstituiAluno(fabio);
+Console.WriteLine("Quem é o aluno 5617 agora?");
+Console.WriteLine(cSharpColecoes.BuscaMatriculado(fabio.NumeroMatricula));
+// como o dicionário armazena valores?

@@ -10,6 +10,8 @@ namespace ListaDeObjetos
     public class Curso
     {
 
+        private IDictionary<int, Aluno> dicionarioAlunos = new Dictionary<int, Aluno>();
+
         private ISet<Aluno> alunos = new HashSet<Aluno>();
 
         public IList<Aluno> Alunos 
@@ -90,6 +92,7 @@ namespace ListaDeObjetos
         public void Matricula(Aluno aluno)
         {
             alunos.Add(aluno);
+            this.dicionarioAlunos.Add(aluno.NumeroMatricula, aluno);
         }
 
         public bool EstaMatriculado(Aluno aluno)
@@ -99,14 +102,31 @@ namespace ListaDeObjetos
 
         internal Aluno BuscaMatriculado(int numeroMatricula)
         {
-            foreach(var aluno in alunos)
-            {
-                if(aluno.NumeroMatricula == numeroMatricula)
-                {
-                    return aluno;
-                }
-            }
-            throw new Exception("Matricula não encotrada!" + numeroMatricula);
+            // Busca HashSet;
+            //foreach(var aluno in alunos)
+            //{
+            //    if(aluno.NumeroMatricula == numeroMatricula)
+            //    {
+            //        return aluno;
+            //    }
+            //}
+            //throw new Exception("Matricula não encotrada!" + numeroMatricula);
+            // busca através do dicionário
+
+            //return this.dicionarioAlunos[numeroMatricula];
+
+            //TryGetValue é um método seguro para casos de erro
+
+            Aluno aluno = null;
+            this.dicionarioAlunos.TryGetValue(numeroMatricula, out aluno);
+            return aluno;
+
+        }
+
+        internal void SubstituiAluno(Aluno aluno)
+        {
+
+            this.dicionarioAlunos[aluno.NumeroMatricula] = aluno;
         }
     }
 }

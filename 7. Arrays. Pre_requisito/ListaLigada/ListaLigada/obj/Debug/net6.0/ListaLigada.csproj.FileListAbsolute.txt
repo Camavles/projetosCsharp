@@ -1,0 +1,15 @@
+C:\Users\camil\source\repos\7. Arrays. Pre_requisito\ListaLigada\ListaLigada\bin\Debug\net6.0\ListaLigada.exe
+C:\Users\camil\source\repos\7. Arrays. Pre_requisito\ListaLigada\ListaLigada\bin\Debug\net6.0\ListaLigada.deps.json
+C:\Users\camil\source\repos\7. Arrays. Pre_requisito\ListaLigada\ListaLigada\bin\Debug\net6.0\ListaLigada.runtimeconfig.json
+C:\Users\camil\source\repos\7. Arrays. Pre_requisito\ListaLigada\ListaLigada\bin\Debug\net6.0\ListaLigada.dll
+C:\Users\camil\source\repos\7. Arrays. Pre_requisito\ListaLigada\ListaLigada\bin\Debug\net6.0\ListaLigada.pdb
+C:\Users\camil\source\repos\7. Arrays. Pre_requisito\ListaLigada\ListaLigada\obj\Debug\net6.0\ListaLigada.csproj.AssemblyReference.cache
+C:\Users\camil\source\repos\7. Arrays. Pre_requisito\ListaLigada\ListaLigada\obj\Debug\net6.0\ListaLigada.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\camil\source\repos\7. Arrays. Pre_requisito\ListaLigada\ListaLigada\obj\Debug\net6.0\ListaLigada.AssemblyInfoInputs.cache
+C:\Users\camil\source\repos\7. Arrays. Pre_requisito\ListaLigada\ListaLigada\obj\Debug\net6.0\ListaLigada.AssemblyInfo.cs
+C:\Users\camil\source\repos\7. Arrays. Pre_requisito\ListaLigada\ListaLigada\obj\Debug\net6.0\ListaLigada.csproj.CoreCompileInputs.cache
+C:\Users\camil\source\repos\7. Arrays. Pre_requisito\ListaLigada\ListaLigada\obj\Debug\net6.0\ListaLigada.dll
+C:\Users\camil\source\repos\7. Arrays. Pre_requisito\ListaLigada\ListaLigada\obj\Debug\net6.0\refint\ListaLigada.dll
+C:\Users\camil\source\repos\7. Arrays. Pre_requisito\ListaLigada\ListaLigada\obj\Debug\net6.0\ListaLigada.pdb
+C:\Users\camil\source\repos\7. Arrays. Pre_requisito\ListaLigada\ListaLigada\obj\Debug\net6.0\ListaLigada.genruntimeconfig.cache
+C:\Users\camil\source\repos\7. Arrays. Pre_requisito\ListaLigada\ListaLigada\obj\Debug\net6.0\ref\ListaLigada.dll

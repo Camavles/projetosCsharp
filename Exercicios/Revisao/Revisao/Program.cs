@@ -7,7 +7,7 @@ using System.Linq;
 using System.Xml;
 
 // Listas Dinâmicas
-Imprimir();
+//Imprimir();
 void Imprimir()
 {
     // Listas dinâmica;
@@ -63,7 +63,27 @@ void Imprimir()
 }
 
 
+// Listas HashSet
+Mostrar();
 void Mostrar()
 {
+    // Listas do tipo HashSet não permitem duplicidade;
+    // Não são mantidas em ordem específica, então não consigo percorrer com for;
+
+    ContaCorrente conta1 = new ContaCorrente(10, "1010-A");
+    ContaCorrente conta2 = new ContaCorrente(20, "2020-B");
+    ContaCorrente conta3 = new ContaCorrente(30, "3030-C");
+
+    GerenciadorConta gerenciador = new GerenciadorConta();
+
+    gerenciador.Registrar(conta1);
+    gerenciador.Registrar(conta2);
+    gerenciador.Registrar(conta3);
+
+    // Problema para resolver: Não é possível fazer esse tipo de busca em uma lista HashSet
+    // Pq como essa lista utiliza a tabela de espalhamento ela precisa comparar objetos e pegar o HashCode gerado para esse objeto. 
+    // Preciso dar um override no Equals() e no GetHashCode | Consultar Class Aluno da ListaDeObjetos; 
+    Console.WriteLine(gerenciador.BuscarConta("2020")); 
+
 
 }

@@ -25,4 +25,10 @@ internal class ContaCorrente
 		this.numeroAgencia = numeroAgencia;
 		this.numeroConta = numeroConta;
     }
+
+    public override string ToString()
+    {
+		//;
+		return $"Conta: {NumeroConta}, Agencia: {numeroAgencia}";
+    }
 }

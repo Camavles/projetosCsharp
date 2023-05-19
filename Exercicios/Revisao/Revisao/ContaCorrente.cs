@@ -28,7 +28,24 @@ internal class ContaCorrente
 
     public override string ToString()
     {
-		//;
-		return $"Conta: {NumeroConta}, Agencia: {numeroAgencia}";
+		//
+		return $"Conta: {this.NumeroConta}, Agencia: {this.numeroAgencia}";
+    }
+
+    // quando eu implemento o Equals, eu preciso implementar o GetHashCode();
+    public override bool Equals(object? obj)
+    {
+        ContaCorrente outra = obj as ContaCorrente;
+
+        if (outra == null) return false;
+
+        return this.NumeroConta.Equals(outra.NumeroConta);
+
+    }
+
+
+    public override int GetHashCode()
+    {
+        return this.NumeroConta.GetHashCode();
     }
 }

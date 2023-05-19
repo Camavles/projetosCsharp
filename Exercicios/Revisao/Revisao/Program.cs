@@ -4,6 +4,7 @@ using Revisao.Gerencidores;
 using System.Collections.Immutable;
 using System.ComponentModel;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Xml;
 
 // Listas Dinâmicas
@@ -67,23 +68,50 @@ void Imprimir()
 Mostrar();
 void Mostrar()
 {
-    // Listas do tipo HashSet não permitem duplicidade;
-    // Não são mantidas em ordem específica, então não consigo percorrer com for;
+    // 1. Listas do tipo HashSet não permitem duplicidade;
+    // 2. Não são mantidas em ordem específica, então não consigo percorrer com for;
+    // 3. Se eu adicionar um elemento que já existe não adiciona, mas tbm não dá erro. 
+    // Vantagens: O Conjunto é mais rápido para buscar elementos; 
+    //
 
     ContaCorrente conta1 = new ContaCorrente(10, "1010-A");
     ContaCorrente conta2 = new ContaCorrente(20, "2020-B");
     ContaCorrente conta3 = new ContaCorrente(30, "3030-C");
+    ContaCorrente conta4 = new ContaCorrente(30, "3030-C");
+
 
     GerenciadorConta gerenciador = new GerenciadorConta();
 
-    gerenciador.Registrar(conta1);
     gerenciador.Registrar(conta2);
+    gerenciador.Registrar(conta1);
     gerenciador.Registrar(conta3);
+
+    foreach (var conta in gerenciador.ListaDeContasCorrentes)
+    {
+        Console.WriteLine(conta);
+    }
+
+    Console.Clear();
+
+    List<ContaCorrente> copia = new List<ContaCorrente>(gerenciador.ListaDeContasCorrentes);
+    copia.Sort((este, outro) =>  este.NumeroAgencia.CompareTo(outro.NumeroAgencia));
+
+    foreach(var conta in copia)
+    {
+        Console.WriteLine(conta);
+    }
+  
 
     // Problema para resolver: Não é possível fazer esse tipo de busca em uma lista HashSet
     // Pq como essa lista utiliza a tabela de espalhamento ela precisa comparar objetos e pegar o HashCode gerado para esse objeto. 
     // Preciso dar um override no Equals() e no GetHashCode | Consultar Class Aluno da ListaDeObjetos; 
-    Console.WriteLine(gerenciador.BuscarConta("2020")); 
+    Console.WriteLine(gerenciador.BuscarConta(conta3));
+
+    // eu posso passar a conta direto, porque o que vai ser usado de comparação vai ser o NumeroDaConta
+    Console.WriteLine(conta3.Equals(conta4));
+
+
+    // Preciso revidar os assuntos de lista ligada, pilha e fila.  
 
 
 }

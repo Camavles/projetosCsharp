@@ -14,7 +14,7 @@ namespace Revisao.Gerencidores
         // aqui eu já passei direto a referencia de instancia
         private ISet<ContaCorrente> listaDeContasCorrentes = new HashSet<ContaCorrente>();
 
-
+        // para retornar uma lista somente leitura, eu preciso implementar um IList
         public IList<ContaCorrente> ListaDeContasCorrentes
         {
             get
@@ -23,19 +23,9 @@ namespace Revisao.Gerencidores
             }
         }
 
-        public ContaCorrente BuscarConta(string contaNumero)
+        public bool BuscarConta(ContaCorrente conta)
         {
-            // Problema para resolver: Não é possível fazer esse tipo de busca em uma lista HashSet
-            //foreach(var conta in ListaDeContasCorrentes)
-            //{
-            //    if(conta.NumeroConta == contaNumero)
-            //    {
-            //        return conta;
-            //    }
-                
-            //}
-
-            //throw new Exception("Conta não contrada" + contaNumero);
+            return listaDeContasCorrentes.Contains(conta);
         }
 
 
@@ -43,6 +33,7 @@ namespace Revisao.Gerencidores
         {
             this.listaDeContasCorrentes.Add(conta);
         }
+
 
 
 

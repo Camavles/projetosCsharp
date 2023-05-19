@@ -27,7 +27,7 @@ namespace Revisao
 
         public override string ToString()
         {
-			return $"Cliente: {Nome}";
+			return $"Cliente: {this.Nome}";
         }
 
 

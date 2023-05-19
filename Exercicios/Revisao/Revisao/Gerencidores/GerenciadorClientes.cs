@@ -20,6 +20,7 @@ namespace Revisao.Gerencidores
             {
                 // Estava dando erro, pois eu não tinha feito a referencia de instancia ao objeto;
                 // criei isso no ctor;
+                // transformei em IList para poder usar o ReadOnly
                 return new ReadOnlyCollection<Cliente>(clientes);
             }
         }
@@ -67,7 +68,7 @@ namespace Revisao.Gerencidores
 
         public override string ToString()
         {
-            return $"Clientes: {string.Join(",", clientes)}";
+            return $"Clientes: {Clientes}";
         }
 
      

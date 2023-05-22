@@ -282,6 +282,7 @@ void CadastrarConta()
 }
 
 
+
 List<ContaCorrente> contas = new List<ContaCorrente>()
        {
             new ContaCorrente(14, "5654-A"),
@@ -319,11 +320,8 @@ void Imprimir(List<ContaCorrente> contas)
 
 
 
-
-
-
 Console.WriteLine();
-Imprimir(contas);
+//Imprimir(contas);
 
 
 

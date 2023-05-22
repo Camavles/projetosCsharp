@@ -23,6 +23,7 @@ namespace Revisao.Gerencidores
             }
         }
 
+
         public bool BuscarConta(ContaCorrente conta)
         {
             return listaDeContasCorrentes.Contains(conta);
@@ -34,7 +35,18 @@ namespace Revisao.Gerencidores
             this.listaDeContasCorrentes.Add(conta);
         }
 
+        internal ContaCorrente EncontrarConta(string numeroConta)
+        {
+            foreach(var conta  in listaDeContasCorrentes)
+            {
+                if(conta.NumeroConta == numeroConta)
+                {
+                    return conta;
+                }
+            }
 
+            throw new Exception("Conta não encontrada " + numeroConta);
+        }
 
 
     }

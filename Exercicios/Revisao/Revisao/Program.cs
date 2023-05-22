@@ -65,7 +65,7 @@ void Imprimir()
 
 
 // Listas HashSet
-Mostrar();
+//Mostrar();
 void Mostrar()
 {
     // 1. Listas do tipo HashSet não permitem duplicidade;
@@ -113,5 +113,37 @@ void Mostrar()
 
     // Preciso revidar os assuntos de lista ligada, pilha e fila.  
 
+
+}
+
+
+
+ImprimirDicionario();
+void ImprimirDicionario()
+{
+    // Imprimentando o dicionario para fazer uma busca prlo numero da conta;
+
+
+
+    ContaCorrente conta1 = new ContaCorrente(10, "1010-A");
+    ContaCorrente conta2 = new ContaCorrente(20, "2020-B");
+    ContaCorrente conta3 = new ContaCorrente(30, "3030-C");
+    ContaCorrente conta4 = new ContaCorrente(30, "3030-C");
+
+
+    GerenciadorConta gerenciador = new GerenciadorConta();
+
+    gerenciador.Registrar(conta2);
+    gerenciador.Registrar(conta1);
+    gerenciador.Registrar(conta3);
+
+    foreach (var conta in gerenciador.ListaDeContasCorrentes)
+    {
+        Console.WriteLine(conta);
+    }
+
+    var encontra = gerenciador.EncontrarConta("1010-A");
+    Console.WriteLine("Conta encontrada: " + encontra);
+    // terminar a revisão sobre dicionário; 
 
 }

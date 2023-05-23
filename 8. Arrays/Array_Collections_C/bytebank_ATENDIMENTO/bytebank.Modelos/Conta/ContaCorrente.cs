@@ -1,6 +1,6 @@
 ﻿namespace bytebank.Modelos.Conta
 {
-    public class ContaCorrente:IComparable<ContaCorrente>
+    public class ContaCorrente : IComparable<ContaCorrente>
     {     
        
         public Cliente Titular{get;set;}
@@ -111,11 +111,12 @@
             }
         }
 
+        // inerrogação significa que pode receber um objet nulo
         public int CompareTo(ContaCorrente? outro)
         {
-            if (outro==null)
+            if (outro == null)
             {
-              return 1;
+                return 1;
             }
             else
             {
@@ -143,6 +144,7 @@
 
         public static int TotalDeContasCriadas { get; set; }
 
+        // já tem um oveeride pra que na hora que eu chamo o foreach os dados da conta já sejam exibidos corretamente;
         public override string ToString()
         {
 
@@ -156,6 +158,8 @@
                    
 
         }
+
+       
 
 
     }

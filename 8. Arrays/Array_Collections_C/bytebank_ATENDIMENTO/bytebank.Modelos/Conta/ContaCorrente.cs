@@ -136,6 +136,7 @@
         public ContaCorrente(int numero_agencia)
         {
             Numero_agencia = numero_agencia;
+            // essa linha cria o número de conta automaticamente;
             Conta = Guid.NewGuid().ToString().Substring(0, 8);
             Titular = new Cliente();
             TotalDeContasCriadas += 1;
@@ -154,7 +155,8 @@
                    $"Saldo da Conta: {this.Saldo} \n" +
                    $"Titular da Conta: {this.Titular.Nome} \n" +
                    $"CPF do Titular  : {this.Titular.Cpf} \n" +
-                   $"Profissão do Titular: { this.Titular.Profissao}\n\n";
+                   $"Profissão do Titular: { this.Titular.Profissao}\n\n" +
+                   $">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>";
                    
 
         }

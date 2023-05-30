@@ -28,7 +28,7 @@ partial class Program
             {
                 var linha = leitor.ReadLine();
                 var contaCorrente = ConverterStringParaContaCorrente(linha);
-                var msg = $"Titulat: {contaCorrente.Titular.Nome}, Conta Agencia: {contaCorrente.Agencia}, Número: {contaCorrente.Numero}, Saldo: R${contaCorrente.Saldo}";
+                var msg = $"Titular: {contaCorrente.Titular.Nome}, Conta Agencia: {contaCorrente.Agencia}, Número: {contaCorrente.Numero}, Saldo: R${contaCorrente.Saldo}";
 
                 Console.WriteLine(msg);
             }

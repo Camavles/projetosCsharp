@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>bytebank_Projeto_GeradorChavePix</id>
+    <version>1.0.0</version>
+    <title>Pacote Gerador de Chaves Aleatórias PIX</title>
+    <authors>bytebank_Projeto_GeradorChavePix</authors>
+    <description>Esse pacote se destina a gerar chaves PIX de forma aleatória,  usando os recursos da estrutura Guid.</description>
+    <dependencies>
+      <group targetFramework="net6.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Users\camil\source\repos\10. Nuget\gerador_chavepix\bytebank_GeradorChavePix\bytebank_GeradorChavePix\bin\Debug\net6.0\bytebank_Projeto_GeradorChavePix.dll" target="lib\net6.0\bytebank_Projeto_GeradorChavePix.dll" />
+    <file src="C:\Users\camil\source\repos\10. Nuget\gerador_chavepix\bytebank_GeradorChavePix\bytebank_GeradorChavePix\bin\Debug\net6.0\bytebank_Projeto_GeradorChavePix.xml" target="lib\net6.0\bytebank_Projeto_GeradorChavePix.xml" />
+  </files>
+</package>

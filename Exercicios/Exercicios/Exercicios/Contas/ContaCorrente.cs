@@ -1,15 +1,16 @@
 ﻿using Exercicios.Cliente;
 using Exercicios.Excecoes;
-using Exercicios.Utilidades;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Serialization;
 
 namespace Exercicios.Contas
 {
+    [XmlInclude(typeof(ContaCorrente))]
     public class ContaCorrente
     {
 
@@ -17,9 +18,9 @@ namespace Exercicios.Contas
 
         public int Numero_agencia { get; private set; }
 
-        public string Conta { get; private set; }
+        public string Conta { get;  set; }
 
-        public double Saldo { get; private set; }
+        public double Saldo { get; set; }
 
         public static int TotalDeContas { get; private set; }
 

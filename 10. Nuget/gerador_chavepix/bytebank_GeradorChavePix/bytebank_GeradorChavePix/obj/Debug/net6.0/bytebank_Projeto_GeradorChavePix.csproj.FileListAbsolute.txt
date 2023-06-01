@@ -1,0 +1,14 @@
+C:\Users\camil\source\repos\10. Nuget\gerador_chavepix\bytebank_GeradorChavePix\bytebank_GeradorChavePix\bin\Debug\net6.0\bytebank_Projeto_GeradorChavePix.deps.json
+C:\Users\camil\source\repos\10. Nuget\gerador_chavepix\bytebank_GeradorChavePix\bytebank_GeradorChavePix\bin\Debug\net6.0\bytebank_Projeto_GeradorChavePix.dll
+C:\Users\camil\source\repos\10. Nuget\gerador_chavepix\bytebank_GeradorChavePix\bytebank_GeradorChavePix\bin\Debug\net6.0\bytebank_Projeto_GeradorChavePix.pdb
+C:\Users\camil\source\repos\10. Nuget\gerador_chavepix\bytebank_GeradorChavePix\bytebank_GeradorChavePix\bin\Debug\net6.0\bytebank_Projeto_GeradorChavePix.xml
+C:\Users\camil\source\repos\10. Nuget\gerador_chavepix\bytebank_GeradorChavePix\bytebank_GeradorChavePix\obj\Debug\net6.0\bytebank_Projeto_GeradorChavePix.csproj.AssemblyReference.cache
+C:\Users\camil\source\repos\10. Nuget\gerador_chavepix\bytebank_GeradorChavePix\bytebank_GeradorChavePix\obj\Debug\net6.0\bytebank_Projeto_GeradorChavePix.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\camil\source\repos\10. Nuget\gerador_chavepix\bytebank_GeradorChavePix\bytebank_GeradorChavePix\obj\Debug\net6.0\bytebank_Projeto_GeradorChavePix.AssemblyInfoInputs.cache
+C:\Users\camil\source\repos\10. Nuget\gerador_chavepix\bytebank_GeradorChavePix\bytebank_GeradorChavePix\obj\Debug\net6.0\bytebank_Projeto_GeradorChavePix.AssemblyInfo.cs
+C:\Users\camil\source\repos\10. Nuget\gerador_chavepix\bytebank_GeradorChavePix\bytebank_GeradorChavePix\obj\Debug\net6.0\bytebank_Projeto_GeradorChavePix.csproj.CoreCompileInputs.cache
+C:\Users\camil\source\repos\10. Nuget\gerador_chavepix\bytebank_GeradorChavePix\bytebank_GeradorChavePix\obj\Debug\net6.0\bytebank_Projeto_GeradorChavePix.dll
+C:\Users\camil\source\repos\10. Nuget\gerador_chavepix\bytebank_GeradorChavePix\bytebank_GeradorChavePix\obj\Debug\net6.0\refint\bytebank_Projeto_GeradorChavePix.dll
+C:\Users\camil\source\repos\10. Nuget\gerador_chavepix\bytebank_GeradorChavePix\bytebank_GeradorChavePix\obj\Debug\net6.0\bytebank_Projeto_GeradorChavePix.xml
+C:\Users\camil\source\repos\10. Nuget\gerador_chavepix\bytebank_GeradorChavePix\bytebank_GeradorChavePix\obj\Debug\net6.0\bytebank_Projeto_GeradorChavePix.pdb
+C:\Users\camil\source\repos\10. Nuget\gerador_chavepix\bytebank_GeradorChavePix\bytebank_GeradorChavePix\obj\Debug\net6.0\ref\bytebank_Projeto_GeradorChavePix.dll

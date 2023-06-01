@@ -1,0 +1,104 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0": {
+      "bytebank_Projeto_GeradorChavePix/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/bytebank_Projeto_GeradorChavePix.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/bytebank_Projeto_GeradorChavePix.dll": {
+            "related": ".xml"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "bytebank_Projeto_GeradorChavePix/1.0.0": {
+      "sha512": "4C6WVKJ+DKSnapVIQZNGh7CStu6YvL8CuGTkiOvJoXbjUiJ/HF0a/JHI8x+/mmqSHm70bXloZnJw0EVY5O8l8Q==",
+      "type": "package",
+      "path": "bytebank_projeto_geradorchavepix/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "bytebank_projeto_geradorchavepix.1.0.0.nupkg.sha512",
+        "bytebank_projeto_geradorchavepix.nuspec",
+        "lib/net6.0/bytebank_Projeto_GeradorChavePix.dll",
+        "lib/net6.0/bytebank_Projeto_GeradorChavePix.xml"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0": [
+      "bytebank_Projeto_GeradorChavePix >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\camil\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\camil\\source\\repos\\10. Nuget\\consumidor_pacote\\ConsumidorPacote\\ConsumidorPacote\\ConsumidorPacote.csproj",
+      "projectName": "ConsumidorPacote",
+      "projectPath": "C:\\Users\\camil\\source\\repos\\10. Nuget\\consumidor_pacote\\ConsumidorPacote\\ConsumidorPacote\\ConsumidorPacote.csproj",
+      "packagesPath": "C:\\Users\\camil\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\camil\\source\\repos\\10. Nuget\\consumidor_pacote\\ConsumidorPacote\\ConsumidorPacote\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\camil\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0": {
+        "targetAlias": "net6.0",
+        "dependencies": {
+          "bytebank_Projeto_GeradorChavePix": {
+            "target": "Package",
+            "version": "[1.0.0, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

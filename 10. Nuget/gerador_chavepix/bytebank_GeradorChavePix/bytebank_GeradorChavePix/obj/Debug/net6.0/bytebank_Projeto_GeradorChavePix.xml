@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>bytebank_Projeto_GeradorChavePix</name>
+    </assembly>
+    <members>
+        <member name="T:bytebank_Projeto_GeradorChavePix.GeradorPix">
+            <summary>
+            Classe que gera chaves Pix usando o formato Guid.
+            </summary>
+        </member>
+        <member name="M:bytebank_Projeto_GeradorChavePix.GeradorPix.GetChavePix">
+            <summary>
+            Método que retorna uma chave aleatória de pix
+            </summary>
+            <returns>Retorna uma chave Pix no formato string.</returns>
+        </member>
+        <member name="M:bytebank_Projeto_GeradorChavePix.GeradorPix.GetChavesPix(System.Int32)">
+            <summary>
+            Método que retorna uma lista de chaves Pix aleatórias.
+            </summary>
+            <param name="numeroChaves"> Quantidade de chaves a serem geradas.
+            </param>
+            <returns>Lista de strings de chaves Pix.</returns>
+        </member>
+    </members>
+</doc>

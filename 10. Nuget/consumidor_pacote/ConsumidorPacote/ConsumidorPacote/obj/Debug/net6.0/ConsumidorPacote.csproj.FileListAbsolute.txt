@@ -1,0 +1,17 @@
+C:\Users\camil\source\repos\10. Nuget\consumidor_pacote\ConsumidorPacote\ConsumidorPacote\bin\Debug\net6.0\ConsumidorPacote.exe
+C:\Users\camil\source\repos\10. Nuget\consumidor_pacote\ConsumidorPacote\ConsumidorPacote\bin\Debug\net6.0\ConsumidorPacote.deps.json
+C:\Users\camil\source\repos\10. Nuget\consumidor_pacote\ConsumidorPacote\ConsumidorPacote\bin\Debug\net6.0\ConsumidorPacote.runtimeconfig.json
+C:\Users\camil\source\repos\10. Nuget\consumidor_pacote\ConsumidorPacote\ConsumidorPacote\bin\Debug\net6.0\ConsumidorPacote.dll
+C:\Users\camil\source\repos\10. Nuget\consumidor_pacote\ConsumidorPacote\ConsumidorPacote\bin\Debug\net6.0\ConsumidorPacote.pdb
+C:\Users\camil\source\repos\10. Nuget\consumidor_pacote\ConsumidorPacote\ConsumidorPacote\bin\Debug\net6.0\bytebank_Projeto_GeradorChavePix.dll
+C:\Users\camil\source\repos\10. Nuget\consumidor_pacote\ConsumidorPacote\ConsumidorPacote\obj\Debug\net6.0\ConsumidorPacote.csproj.AssemblyReference.cache
+C:\Users\camil\source\repos\10. Nuget\consumidor_pacote\ConsumidorPacote\ConsumidorPacote\obj\Debug\net6.0\ConsumidorPacote.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\camil\source\repos\10. Nuget\consumidor_pacote\ConsumidorPacote\ConsumidorPacote\obj\Debug\net6.0\ConsumidorPacote.AssemblyInfoInputs.cache
+C:\Users\camil\source\repos\10. Nuget\consumidor_pacote\ConsumidorPacote\ConsumidorPacote\obj\Debug\net6.0\ConsumidorPacote.AssemblyInfo.cs
+C:\Users\camil\source\repos\10. Nuget\consumidor_pacote\ConsumidorPacote\ConsumidorPacote\obj\Debug\net6.0\ConsumidorPacote.csproj.CoreCompileInputs.cache
+C:\Users\camil\source\repos\10. Nuget\consumidor_pacote\ConsumidorPacote\ConsumidorPacote\obj\Debug\net6.0\ConsumidorPacote.csproj.CopyComplete
+C:\Users\camil\source\repos\10. Nuget\consumidor_pacote\ConsumidorPacote\ConsumidorPacote\obj\Debug\net6.0\ConsumidorPacote.dll
+C:\Users\camil\source\repos\10. Nuget\consumidor_pacote\ConsumidorPacote\ConsumidorPacote\obj\Debug\net6.0\refint\ConsumidorPacote.dll
+C:\Users\camil\source\repos\10. Nuget\consumidor_pacote\ConsumidorPacote\ConsumidorPacote\obj\Debug\net6.0\ConsumidorPacote.pdb
+C:\Users\camil\source\repos\10. Nuget\consumidor_pacote\ConsumidorPacote\ConsumidorPacote\obj\Debug\net6.0\ConsumidorPacote.genruntimeconfig.cache
+C:\Users\camil\source\repos\10. Nuget\consumidor_pacote\ConsumidorPacote\ConsumidorPacote\obj\Debug\net6.0\ref\ConsumidorPacote.dll

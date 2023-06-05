@@ -1,0 +1,1 @@
+A ideia dessa solução é treinar as listas genéricas, dicionários e buscas

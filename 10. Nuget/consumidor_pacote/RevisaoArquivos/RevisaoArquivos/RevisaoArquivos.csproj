@@ -7,8 +7,4 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="bytebank_Projeto_GeradorChavePix" Version="1.0.0" />
-  </ItemGroup>
-
 </Project>

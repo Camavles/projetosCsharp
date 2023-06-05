@@ -1,0 +1,12 @@
+C:\Users\camil\source\repos\10. Nuget\consumidor_pacote\TransformadorDeArquivos\TransformadorDeArquivos\bin\Debug\net6.0\TransformadorDeArquivos.deps.json
+C:\Users\camil\source\repos\10. Nuget\consumidor_pacote\TransformadorDeArquivos\TransformadorDeArquivos\bin\Debug\net6.0\TransformadorDeArquivos.dll
+C:\Users\camil\source\repos\10. Nuget\consumidor_pacote\TransformadorDeArquivos\TransformadorDeArquivos\bin\Debug\net6.0\TransformadorDeArquivos.pdb
+C:\Users\camil\source\repos\10. Nuget\consumidor_pacote\TransformadorDeArquivos\TransformadorDeArquivos\obj\Debug\net6.0\TransformadorDeArquivos.csproj.AssemblyReference.cache
+C:\Users\camil\source\repos\10. Nuget\consumidor_pacote\TransformadorDeArquivos\TransformadorDeArquivos\obj\Debug\net6.0\TransformadorDeArquivos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\camil\source\repos\10. Nuget\consumidor_pacote\TransformadorDeArquivos\TransformadorDeArquivos\obj\Debug\net6.0\TransformadorDeArquivos.AssemblyInfoInputs.cache
+C:\Users\camil\source\repos\10. Nuget\consumidor_pacote\TransformadorDeArquivos\TransformadorDeArquivos\obj\Debug\net6.0\TransformadorDeArquivos.AssemblyInfo.cs
+C:\Users\camil\source\repos\10. Nuget\consumidor_pacote\TransformadorDeArquivos\TransformadorDeArquivos\obj\Debug\net6.0\TransformadorDeArquivos.csproj.CoreCompileInputs.cache
+C:\Users\camil\source\repos\10. Nuget\consumidor_pacote\TransformadorDeArquivos\TransformadorDeArquivos\obj\Debug\net6.0\TransformadorDeArquivos.dll
+C:\Users\camil\source\repos\10. Nuget\consumidor_pacote\TransformadorDeArquivos\TransformadorDeArquivos\obj\Debug\net6.0\refint\TransformadorDeArquivos.dll
+C:\Users\camil\source\repos\10. Nuget\consumidor_pacote\TransformadorDeArquivos\TransformadorDeArquivos\obj\Debug\net6.0\TransformadorDeArquivos.pdb
+C:\Users\camil\source\repos\10. Nuget\consumidor_pacote\TransformadorDeArquivos\TransformadorDeArquivos\obj\Debug\net6.0\ref\TransformadorDeArquivos.dll

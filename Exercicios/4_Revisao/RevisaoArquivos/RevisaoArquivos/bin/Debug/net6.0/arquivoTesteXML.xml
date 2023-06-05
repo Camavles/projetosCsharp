@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfContaCorrente xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ContaCorrente>
+    <titular>
+      <Nome>Camila</Nome>
+      <Cpf>12345</Cpf>
+    </titular>
+    <Numero_conta>1010-X</Numero_conta>
+    <Agencia>23</Agencia>
+    <Saldo>0</Saldo>
+  </ContaCorrente>
+  <ContaCorrente>
+    <titular>
+      <Nome>Rapha</Nome>
+      <Cpf>5892</Cpf>
+    </titular>
+    <Numero_conta>2020-Z</Numero_conta>
+    <Agencia>24</Agencia>
+    <Saldo>0</Saldo>
+  </ContaCorrente>
+  <ContaCorrente>
+    <Numero_conta>4040-W</Numero_conta>
+    <Agencia>25</Agencia>
+    <Saldo>0</Saldo>
+  </ContaCorrente>
+</ArrayOfContaCorrente>

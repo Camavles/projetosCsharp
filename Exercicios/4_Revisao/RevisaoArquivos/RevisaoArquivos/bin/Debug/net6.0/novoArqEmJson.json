@@ -1,0 +1,28 @@
+[
+  {
+    "titular": {
+      "Nome": "Camila",
+      "Cpf": "12345",
+      "Profissao": null
+    },
+    "Numero_conta": "1010-X",
+    "Agencia": 23,
+    "Saldo": 0.0
+  },
+  {
+    "titular": {
+      "Nome": "Rapha",
+      "Cpf": "5892",
+      "Profissao": null
+    },
+    "Numero_conta": "2020-Z",
+    "Agencia": 24,
+    "Saldo": 0.0
+  },
+  {
+    "titular": null,
+    "Numero_conta": "4040-W",
+    "Agencia": 25,
+    "Saldo": 0.0
+  }
+]

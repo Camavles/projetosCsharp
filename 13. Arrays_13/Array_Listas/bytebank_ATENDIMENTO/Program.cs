@@ -8,7 +8,7 @@ using System.Linq;
 //Console.WriteLine("Boas Vindas ao ByteBank, Atendimento.");
 //new ByteBankAtendimento().AtendimentoCliente();
 
-// ARRAY
+//***************************** ARRAY ***********************************************
 
 void TestaArrayInt()
 {
@@ -39,7 +39,6 @@ void TestaArrayInt()
 
 
 // ARRAY DE OBJETOS CONTACORRENTE
-
 void TestaArrayObj()
 {
     ContaCorrente[] contas = new ContaCorrente[] {
@@ -59,13 +58,13 @@ void TestaArrayObj()
 }
 
 
-TestaLista();
+//TestaLista();
 void TestaLista()
 {
     // a ideia é criar uma classe com métodos que possam manipular a minha array, já que a manipulação dela por si só não é algo intutitivo;
 
 
-    ListaDeContaCorrente lista = new ListaDeContaCorrente();
+    Lista<ContaCorrente> lista = new Lista<ContaCorrente>();
     lista.Adicionar(new ContaCorrente(874, "5679787"));
     lista.Adicionar(new ContaCorrente(874, "5679754"));
     lista.Adicionar(new ContaCorrente(874, "5679745"));
@@ -77,7 +76,7 @@ void TestaLista()
     //// forma de alterar apenas um argumento opcional;
     //Console.WriteLine(lista.Testar(numero: 9));
 
-   
+
 
     //ContaCorrente camila = new ContaCorrente(24, "2010");
     //lista.Adicionar(camila);
@@ -88,10 +87,44 @@ void TestaLista()
     //lista.EscreverListaNaTela();
 
 
-    for(int i = 0; i < lista.Tamanho; i++)
+    for (int i = 0; i < lista.Tamanho; i++)
     {
         Console.WriteLine($"Item: {i} / Conta: {lista[i].Conta} / Agência: {lista[i].Numero_agencia} ");
     }
 
+    // a última coisa que eu fiz foi transformar a classe Lista em uma lista genérica, usando o T e na hora de invocar eu passo para a minha instância qual é o tipo de lista que eu desejo criar;
 
+
+
+
+
+}
+
+
+// ************************** LIST ****************************
+TestaListGenerica();
+void TestaListGenerica()
+{
+    List<int> idades = new List<int>()
+    {
+        3, 4, 5, 6
+    };
+
+    idades.Add(1);
+    idades.Add(2);
+    
+    for(int i = 0; i < idades.Count;i++)
+    {
+        Console.WriteLine(idades[i]);
+    }
+
+    ListExtensoes.AdicionarVarios(idades, 7, 8, 9, 10);
+
+    Console.WriteLine("mudando");
+    for (int i = 0; i < idades.Count; i++)
+    {
+        Console.WriteLine(idades[i]);
+    }
+
+    //problema para resolver: ao invés de criar uma classe de extensões, eu quero a minha instancia idades, consiga acessar um método de seja capaz de adicionar vários itens de uma única vez; 
 }

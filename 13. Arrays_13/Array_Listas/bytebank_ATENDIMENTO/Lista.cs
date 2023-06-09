@@ -6,9 +6,9 @@ using System.Text;
 using System.Threading.Tasks;
 namespace bytebank_ATENDIMENTO;
 
-public class ListaDeContaCorrente
+public class Lista <T>
 {
-    private ContaCorrente[] _itens;
+    private T[] _itens;
 
     private int _proximaPosicao;
 
@@ -25,33 +25,33 @@ public class ListaDeContaCorrente
    
 
     // argumento opcional
-    public ListaDeContaCorrente(int capacidadeInicial = 5)
+    public Lista(int capacidadeInicial = 5)
     {
-        _itens = new ContaCorrente[capacidadeInicial];
+        _itens = new T[capacidadeInicial];
         _proximaPosicao = 0;
     }
 
 
 
-    public void Adicionar(ContaCorrente conta)
+    public void Adicionar(T item)
     {
         VerificarCapacidade(_proximaPosicao + 1);
 
         //Console.WriteLine("");
-        _itens[_proximaPosicao] = conta;
+        _itens[_proximaPosicao] = item;
         _proximaPosicao++;
     }
 
     // usando o params eu declaro que vou usar vários parametros;  
-    public void AdicionarVarios(params ContaCorrente[] itens)
+    public void AdicionarVarios(params T[] itens)
     {
-        foreach(var conta in itens)
+        foreach(var item in itens)
         {
-            Adicionar(conta);
+            Adicionar(item);
         }
     }
 
-    public ContaCorrente GetContaCorrente(int indice)
+    public T GetItem(int indice)
     {
         if (indice < 0 || indice >= _proximaPosicao)
         {
@@ -77,7 +77,7 @@ public class ListaDeContaCorrente
             }
 
             // aqui eu crio um novo array passando o array antigo para ocupar algumas posições;
-            ContaCorrente[] novoArray = new ContaCorrente[novoTamanho];
+            T[] novoArray = new T[novoTamanho];
 
             Console.WriteLine("Aumentando a capacidade da lista");
             for (int i = 0; i < _itens.Length; i++)
@@ -91,37 +91,37 @@ public class ListaDeContaCorrente
 
 
 
-    public void Remover(ContaCorrente conta)
+    public void Remover(T item)
     {
-        int indiceConta = -1; // é um valor ilegal dentro da array, então estou sinalizando que é um valor invalido;
+        int indiceItem = -1; // é um valor ilegal dentro da array, então estou sinalizando que é um valor invalido;
         for (int i = 0; i < _proximaPosicao; i++)
         {
             // diferente do == o Equals compara equivalência; o == compara a referência na memória
-            if (_itens[i].Equals(conta))
+            if (_itens[i].Equals(item))
             {
-                indiceConta = i;
+                indiceItem = i;
                 break;
             }
         }
 
 
-        for (int i = indiceConta; i < _proximaPosicao - 1; ++i)
+        for (int i = indiceItem; i < _proximaPosicao - 1; ++i)
         {
             _itens[i] = _itens[i + 1];
 
         }
 
         _proximaPosicao--;
-        _itens[_proximaPosicao] = null;
+        //_itens[_proximaPosicao] = default(T);
     }
 
     // INDEXADOR;
 
-    public ContaCorrente this[int indice]
+    public T this[int indice]
     {
         get
         {
-            return GetContaCorrente(indice);
+            return GetItem(indice);
         }
 
     }

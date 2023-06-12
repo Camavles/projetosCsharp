@@ -111,8 +111,10 @@
             }
         }
 
+        //MUITO IMPORTANTE!!!!!!
         // interrogação significa que pode receber um objet nulo
         // Esse compare é para ordenar por numero_agencia;
+        // No CompareTo() --> desvantagem é que sou, dev, que digo de que forma será ordenada a caminha lista
         public int CompareTo(ContaCorrente? outro)
         {
             if (outro == null)
@@ -121,7 +123,7 @@
             }
             else
             {
-                return this.Numero_agencia.CompareTo(outro.Numero_agencia);
+                return this.Conta.CompareTo(outro.Conta);
             }
         }
 

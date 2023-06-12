@@ -2,6 +2,7 @@
 using bytebank_ATENDIMENTO;
 using bytebank_ATENDIMENTO.bytebank.Atendimento;
 using bytebank_ATENDIMENTO.bytebank.Util;
+using bytebank_ATENDIMENTO.Extensoes;
 using System.Linq;
 
 
@@ -102,7 +103,9 @@ void TestaLista()
 
 
 // ************************** LIST ****************************
-TestaListGenerica();
+
+
+//TestaListGenerica();
 void TestaListGenerica()
 {
     List<int> idades = new List<int>()
@@ -112,19 +115,75 @@ void TestaListGenerica()
 
     idades.Add(1);
     idades.Add(2);
+  
     
-    for(int i = 0; i < idades.Count;i++)
-    {
-        Console.WriteLine(idades[i]);
-    }
+    //for(int i = 0; i < idades.Count;i++)
+    //{
+    //    Console.WriteLine(idades[i]);
+    //}
 
     ListExtensoes.AdicionarVarios(idades, 7, 8, 9, 10);
 
-    Console.WriteLine("mudando");
+    //Console.WriteLine("mudando");
+    //for (int i = 0; i < idades.Count; i++)
+    //{
+    //    Console.WriteLine(idades[i]);
+    //}
+
+    //problema para resolver: ao invés de criar uma classe de extensões, eu quero que a minha instancia "idades", consiga acessar um método de seja capaz de adicionar vários itens de uma única vez; 
+    // resolvido colocando o this no parametro;
+
+    idades.AdicionarVarios(11, 12, 13, 14);
+    Console.WriteLine();
+    //for (int i = 0; i < idades.Count; i++)
+    //{
+    //    Console.WriteLine(idades[i]);
+    //}
+
+
+    // aqui eu já tinha transformado o meu método em genérico:
+
+    //List<string> palavras = new List<string>();
+    //palavras.AdicionarVarios("Camila", "Isabel", "Lia"); // assim funciona;
+    //palavras.AdicionarVarios<string>("Lua", "Mel"); // assim também funciona, mas o <string> é dispensável;
+    //foreach (string nome in palavras)
+    //{
+    //    Console.WriteLine(nome);
+    //}
+
+    // quando eu declaro var e dou nome e não atribuo, o compilador dá erro;
+
+    idades.Sort();
     for (int i = 0; i < idades.Count; i++)
     {
         Console.WriteLine(idades[i]);
     }
 
-    //problema para resolver: ao invés de criar uma classe de extensões, eu quero a minha instancia idades, consiga acessar um método de seja capaz de adicionar vários itens de uma única vez; 
+}
+
+
+
+TestaMetodosList();
+
+void TestaMetodosList()
+{
+
+
+    var idades = new List<int>();
+    idades.AdicionarVarios(4, 5, 8, 9, 16, 1, 2, 6, 3, 7);
+    idades.Sort();
+
+    foreach(var idade in idades)
+    {
+        Console.WriteLine(idade);
+    }
+
+    //var nomes = new List<string>
+    //{
+    //    "camila", "debora", "lisa", "leila"
+    //};
+
+    //foreach (var nome in nomes) {  Console.WriteLine(nome); }
+    // usar o método sort() em objetos eu preciso ter uma classe/objeto implementando o IComparable;
+    // desvantagem do IComátable é que eu, dev, digo de que forma será organizada a lista; Eu posso implementar uma forma do usuário fazer essa implementação, ou seja, fazer essa escolha sobre a forma como ele quer organizar;
 }

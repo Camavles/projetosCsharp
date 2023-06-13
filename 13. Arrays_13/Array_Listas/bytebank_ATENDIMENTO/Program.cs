@@ -2,6 +2,7 @@
 using bytebank_ATENDIMENTO;
 using bytebank_ATENDIMENTO.bytebank.Atendimento;
 using bytebank_ATENDIMENTO.bytebank.Util;
+using bytebank_ATENDIMENTO.Comparadores;
 using bytebank_ATENDIMENTO.Extensoes;
 using System.Linq;
 
@@ -115,8 +116,8 @@ void TestaListGenerica()
 
     idades.Add(1);
     idades.Add(2);
-  
-    
+
+
     //for(int i = 0; i < idades.Count;i++)
     //{
     //    Console.WriteLine(idades[i]);
@@ -171,12 +172,13 @@ void TestaMetodosList()
 
     var idades = new List<int>();
     idades.AdicionarVarios(4, 5, 8, 9, 16, 1, 2, 6, 3, 7);
-    idades.Sort();
+    // chama a implementação de IComparable;
+    //idades.Sort();
 
-    foreach(var idade in idades)
-    {
-        Console.WriteLine(idade);
-    }
+    //foreach(var idade in idades)
+    //{
+    //    Console.WriteLine(idade);
+    //}
 
     //var nomes = new List<string>
     //{
@@ -185,5 +187,61 @@ void TestaMetodosList()
 
     //foreach (var nome in nomes) {  Console.WriteLine(nome); }
     // usar o método sort() em objetos eu preciso ter uma classe/objeto implementando o IComparable;
-    // desvantagem do IComátable é que eu, dev, digo de que forma será organizada a lista; Eu posso implementar uma forma do usuário fazer essa implementação, ou seja, fazer essa escolha sobre a forma como ele quer organizar;
+    // desvantagem do IComparable é que eu, dev, digo de que forma será organizada a lista; Eu posso implementar uma forma do usuário fazer essa implementação, ou seja, fazer essa escolha sobre a forma como ele quer organizar;
+
+    List<ContaCorrente> contas = new List<ContaCorrente>
+    {
+        new ContaCorrente(24, "4010-X"),
+        null,
+        new ContaCorrente(25, "2010-X"),
+        null,
+        new ContaCorrente(11, "0010-X"),
+        null,
+        new ContaCorrente(10, "1010-X")
+    };
+
+    //usando um =a calsse para implementar o IComparer
+    //contas.Sort(new ComparadorContaCorrente());
+
+    for (int i = 0; i < contas.Count; i++)
+    {
+        // setando saldo;
+        if (contas[i] != null) 
+        {
+            contas[i].Saldo = (i + 20) * 50;
+        }
+        
+    }
+
+    // OrderBy --> tem várias sobrecargas; diferente do sort, ele tem retorno
+    //var contasOrdenadas = contas.OrderBy(conta =>
+    //{
+    //    // MaxValue -- deixa o meu null no final da fila;
+    //    if (conta == null) { return int.MaxValue; }
+
+    //    return conta.Saldo;
+    //});
+
+
+
+    //foreach (var conta in contasOrdenadas)
+    //{
+    //    //conta.Saldo = 100 + 200;
+    //    Console.WriteLine(conta);
+    //}
+
+    // Se eu não quiser fazer essa lógica de verificação de null na minha lista; eu posso criar uma nova lista; varrer a lista velha, e adicionar o que for diferente de null na minha nova lista;
+
+    //var contasNaoNulas = contas.Where(conta => conta != null).ToList(); // devolve um List<T>;
+
+    // colocando tudo junto;
+    var contasOrdenadas = contas
+        .Where(conta => conta != null)
+        .OrderBy(conta => conta.Saldo);
+
+
+    foreach(var conta in contasOrdenadas)
+    {
+        Console.WriteLine(conta);
+    }
 }

@@ -2,7 +2,7 @@
 {
     public class ContaCorrente : IComparable<ContaCorrente>
     {     
-       
+       // IComparable é para comparar instancias de uma classe;
         public Cliente Titular{get;set;}
         public string Nome_Agencia{ get; set; }
 

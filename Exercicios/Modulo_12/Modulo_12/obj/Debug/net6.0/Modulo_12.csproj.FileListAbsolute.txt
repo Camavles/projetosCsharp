@@ -1,0 +1,15 @@
+C:\Users\camil\source\repos\Exercicios\Modulo_12\Modulo_12\bin\Debug\net6.0\Modulo_12.exe
+C:\Users\camil\source\repos\Exercicios\Modulo_12\Modulo_12\bin\Debug\net6.0\Modulo_12.deps.json
+C:\Users\camil\source\repos\Exercicios\Modulo_12\Modulo_12\bin\Debug\net6.0\Modulo_12.runtimeconfig.json
+C:\Users\camil\source\repos\Exercicios\Modulo_12\Modulo_12\bin\Debug\net6.0\Modulo_12.dll
+C:\Users\camil\source\repos\Exercicios\Modulo_12\Modulo_12\bin\Debug\net6.0\Modulo_12.pdb
+C:\Users\camil\source\repos\Exercicios\Modulo_12\Modulo_12\obj\Debug\net6.0\Modulo_12.csproj.AssemblyReference.cache
+C:\Users\camil\source\repos\Exercicios\Modulo_12\Modulo_12\obj\Debug\net6.0\Modulo_12.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\camil\source\repos\Exercicios\Modulo_12\Modulo_12\obj\Debug\net6.0\Modulo_12.AssemblyInfoInputs.cache
+C:\Users\camil\source\repos\Exercicios\Modulo_12\Modulo_12\obj\Debug\net6.0\Modulo_12.AssemblyInfo.cs
+C:\Users\camil\source\repos\Exercicios\Modulo_12\Modulo_12\obj\Debug\net6.0\Modulo_12.csproj.CoreCompileInputs.cache
+C:\Users\camil\source\repos\Exercicios\Modulo_12\Modulo_12\obj\Debug\net6.0\Modulo_12.dll
+C:\Users\camil\source\repos\Exercicios\Modulo_12\Modulo_12\obj\Debug\net6.0\refint\Modulo_12.dll
+C:\Users\camil\source\repos\Exercicios\Modulo_12\Modulo_12\obj\Debug\net6.0\Modulo_12.pdb
+C:\Users\camil\source\repos\Exercicios\Modulo_12\Modulo_12\obj\Debug\net6.0\Modulo_12.genruntimeconfig.cache
+C:\Users\camil\source\repos\Exercicios\Modulo_12\Modulo_12\obj\Debug\net6.0\ref\Modulo_12.dll

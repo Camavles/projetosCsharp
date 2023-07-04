@@ -54,3 +54,7 @@ C:\Users\camil\source\repos\17. Web_API\FilmesApi\FilmesApi\bin\Debug\net6.0\Sys
 C:\Users\camil\source\repos\17. Web_API\FilmesApi\FilmesApi\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
 C:\Users\camil\source\repos\17. Web_API\FilmesApi\FilmesApi\bin\Debug\net6.0\AutoMapper.dll
 C:\Users\camil\source\repos\17. Web_API\FilmesApi\FilmesApi\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\camil\source\repos\17. Web_API\FilmesApi\FilmesApi\bin\Debug\net6.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\camil\source\repos\17. Web_API\FilmesApi\FilmesApi\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\camil\source\repos\17. Web_API\FilmesApi\FilmesApi\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\camil\source\repos\17. Web_API\FilmesApi\FilmesApi\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll

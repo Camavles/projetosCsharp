@@ -1,6 +1,28 @@
+using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
+using UsuariosApi.Data;
+using UsuariosApi.Models;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+
+
+// usando o UsuarioDbContext
+builder.Services.AddDbContext<UsuarioDbContext>(opts =>
+{
+    opts.UseMySql(builder.Configuration.GetConnectionString("UsuarioConnection"),
+        ServerVersion.AutoDetect(builder.Configuration.GetConnectionString("UsuarioConnection")));
+});
+
+// quero adicionar o conceito de Identidade para esse usuário e o papel desse usuario dentro do sistema será gerenciado por vc (IdentityRole)
+// quem vai armazenar as infos do meu usuario é meu UsuarioDbContext
+builder.Services
+    .AddIdentity<Usuario, IdentityRole>()
+    .AddEntityFrameworkStores<UsuarioDbContext>()
+    .AddDefaultTokenProviders();
+
+
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

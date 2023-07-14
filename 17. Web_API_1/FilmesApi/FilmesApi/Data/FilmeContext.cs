@@ -16,14 +16,26 @@ public class FilmeContext : DbContext
     protected override void OnModelCreating(ModelBuilder builder)
     {
         // a entidade sessao vai ter como chave a sessao.FilmeId e sessao.CinemaId 
-        builder.Entity<Sessao>().HasKey(sessao => new { sessao.FilmeId, sessao.CinemaId });
+        builder.Entity<Sessao>()
+            .HasKey(sessao => new { sessao.FilmeId, sessao.CinemaId });
 
         // uma sessao vai ter um cinema, esse cinema tem uma ou mais sessoes
         // e para cada sessao eu tenho um CinemaId.
-        builder.Entity<Sessao>().HasOne(sessao => sessao.Cinema).WithMany(cinema => cinema.Sessoes).HasForeignKey(sessao => sessao.CinemaId);
+        builder.Entity<Sessao>()
+            .HasOne(sessao => sessao.Cinema)
+            .WithMany(cinema => cinema.Sessoes)
+            .HasForeignKey(sessao => sessao.CinemaId);
 
-        builder.Entity<Sessao>().HasOne(sessao => sessao.Filme).WithMany(filme => filme.Sessoes).HasForeignKey(sessao => sessao.FilmeId);
+        builder.Entity<Sessao>()
+            .HasOne(sessao => sessao.Filme)
+            .WithMany(filme => filme.Sessoes)
+            .HasForeignKey(sessao => sessao.FilmeId);
 
+        //tipo de deleção para uma entidade:
+        builder.Entity<Endereco>()
+            .HasOne(endereco => endereco.Cinema)
+            .WithOne(cinema => cinema.Endereco)
+            .OnDelete(DeleteBehavior.Restrict);
     }
 
     public DbSet<Filme> Filmes { get; set; }

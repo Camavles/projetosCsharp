@@ -6,7 +6,8 @@ using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
 
-var connectionString = builder.Configuration.GetConnectionString("FilmeConnection");
+var connectionString = builder.Configuration["ConnectionStrings:FilmeConnection"];
+
 builder.Services.AddDbContext<FilmeContext>(opts => opts.UseLazyLoadingProxies().UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
 
 // adicionando o automapper na aplicação como um todo

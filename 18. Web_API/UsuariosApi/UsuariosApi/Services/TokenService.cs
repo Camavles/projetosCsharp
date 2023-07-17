@@ -1,0 +1,44 @@
+﻿using Microsoft.AspNetCore.Authorization.Infrastructure;
+using Microsoft.IdentityModel.Tokens;
+using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
+using System.Text;
+using UsuariosApi.Models;
+
+namespace UsuariosApi.Services
+{
+    public class TokenService
+    {
+        public string GenerateToken(Usuario usuario)
+        {
+            // informações que serão passadas dentro da Token
+            Claim[] claims = new Claim[]
+            {
+                new Claim("username", usuario.UserName),
+                new Claim("id", usuario.Id),
+                // datetime para claims identity
+                new Claim(ClaimTypes.DateOfBirth, usuario.DataNascimento.ToString()),
+                //new Claim(ClaimTypes.)
+                new Claim("loginTimestamp", DateTime.UtcNow.ToString())
+            };
+
+
+
+            var chave = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("9ASHDA98H9ah9ha9H9A89n0fllllaaishdadaodhasdddggg"));
+
+
+            var signingCredentials = new SigningCredentials(chave, SecurityAlgorithms.HmacSha256);
+
+
+
+            var token = new JwtSecurityToken
+                (
+                expires: DateTime.Now.AddMinutes(10),
+                claims: claims,
+                signingCredentials: signingCredentials
+                );
+
+            return new JwtSecurityTokenHandler().WriteToken(token);
+        }
+    }
+}

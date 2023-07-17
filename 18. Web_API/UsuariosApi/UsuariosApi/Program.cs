@@ -1,5 +1,9 @@
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
 using UsuariosApi.Authorization;
 using UsuariosApi.Data;
 using UsuariosApi.Models;
@@ -9,12 +13,13 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
+var connectionString = builder.Configuration["ConnectionStrings:UsuarioConnection"];
 
 // usando o UsuarioDbContext
 builder.Services.AddDbContext<UsuarioDbContext>(opts =>
 {
-    opts.UseMySql(builder.Configuration.GetConnectionString("UsuarioConnection"),
-        ServerVersion.AutoDetect(builder.Configuration.GetConnectionString("UsuarioConnection")));
+    opts.UseMySql(connectionString,
+        ServerVersion.AutoDetect(connectionString));
 });
 
 // quero adicionar o conceito de Identidade para esse usuário e o papel desse usuario dentro do sistema será gerenciado por vc (IdentityRole)
@@ -27,14 +32,36 @@ builder.Services
 
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
+
+builder.Services.AddSingleton<IAuthorizationHandler, IdadeAuthorization>();
+
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+
+builder.Services.AddAuthentication(options =>
+{
+    options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+}).AddJwtBearer(options =>
+{
+    options.TokenValidationParameters = new Microsoft.IdentityModel.Tokens.TokenValidationParameters
+    {
+        // valida a nossa chave
+        ValidateIssuerSigningKey = true,
+        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["SymmetricSecurityKey"])),
+        ValidateAudience = false,
+        ValidateIssuer = false,
+        ClockSkew = TimeSpan.Zero
+    
+    };
+});
+
+
 builder.Services.AddAuthorization(options =>
 {
-    options.AddPolicy("IdadeMinina", 
+    options.AddPolicy("IdadeMinima", 
         policy => policy.AddRequirements(new IdadeMinima(18))
         );
 });
@@ -54,6 +81,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+app.UseAuthentication();
 
 app.UseAuthorization();
 

@@ -64,3 +64,6 @@ C:\Users\camil\source\repos\18. Web_API\UsuariosApi\UsuariosApi\bin\Debug\net6.0
 C:\Users\camil\source\repos\18. Web_API\UsuariosApi\UsuariosApi\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
 C:\Users\camil\source\repos\18. Web_API\UsuariosApi\UsuariosApi\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\camil\source\repos\18. Web_API\UsuariosApi\UsuariosApi\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\camil\source\repos\18. Web_API\UsuariosApi\UsuariosApi\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\camil\source\repos\18. Web_API\UsuariosApi\UsuariosApi\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\camil\source\repos\18. Web_API\UsuariosApi\UsuariosApi\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll

@@ -8,17 +8,21 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\camil\\.nuget\\packages\\": {}
+    "C:\\Users\\camil\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\camil\\source\\repos\\byteBank\\byteBank\\byteBank.csproj",
+      "projectUniqueName": "C:\\Users\\camil\\source\\repos\\2. POO\\byteBank\\byteBank\\byteBank.csproj",
       "projectName": "byteBank",
-      "projectPath": "C:\\Users\\camil\\source\\repos\\byteBank\\byteBank\\byteBank.csproj",
+      "projectPath": "C:\\Users\\camil\\source\\repos\\2. POO\\byteBank\\byteBank\\byteBank.csproj",
       "packagesPath": "C:\\Users\\camil\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\camil\\source\\repos\\byteBank\\byteBank\\obj\\",
+      "outputPath": "C:\\Users\\camil\\source\\repos\\2. POO\\byteBank\\byteBank\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
         "C:\\Users\\camil\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -61,7 +65,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -1,0 +1,37 @@
+﻿using Alura.Filmes.App.Negocio;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
+using System;
+
+namespace Alura.Filmes.App.Dados
+{
+    public class FilmeAtorConfiguration : IEntityTypeConfiguration<FilmeAtor>
+    {
+        public void Configure(EntityTypeBuilder<FilmeAtor> builder)
+        {
+            builder.ToTable("film_actor");
+
+            builder.Property<int>("film_id");
+            builder.Property<int>("actor_id");
+            
+            builder.Property<DateTime>("last_update")
+                .IsRequired()
+                .HasColumnType("datetime")
+                .HasDefaultValueSql("getdate()");
+
+            builder.HasKey("film_id", "actor_id");
+
+            builder
+                .HasOne(c => c.Filme)
+                .WithMany(d => d.Atores)
+                .HasForeignKey("film_id");
+
+            builder
+                .HasOne(c => c.Ator)
+                .WithMany(d => d.Filmes)
+                .HasForeignKey("actor_id");
+
+            //builder.HasKey(c => new { c.AtorId, c.FilmeId });
+        }
+    }
+}

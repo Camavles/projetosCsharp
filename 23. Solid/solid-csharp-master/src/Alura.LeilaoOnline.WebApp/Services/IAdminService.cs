@@ -16,6 +16,6 @@ namespace Alura.LeilaoOnline.WebApp.Services
         void RemoveLeilao(Leilao leilao);
         void IniciaPregaoDoLeilaoComId(int id);
         void FinalizaPregaoDoLeilaoComId(int id);
-
+        void ArquivaLeilao(int id);
     }
 }

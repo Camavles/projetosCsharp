@@ -65,9 +65,23 @@ namespace Alura.LeilaoOnline.WebApp.Services.Handlers
         {
             if(leilao != null && leilao.Situacao == SituacaoLeilao.Finalizado)
             {
-                _dao.Exclude(leilao); // ok
+                //leilao.Situacao = SituacaoLeilao.Arquivado;
+                //_dao.Update(leilao);
+
+                _dao.Exclude(leilao);
             }
             
+        }
+
+        public void ArquivaLeilao(int id)
+        {
+            var leilao = _dao.GetLeilaoById(id);
+
+            if(leilao != null && leilao.Situacao != SituacaoLeilao.Pregao && leilao.Situacao != SituacaoLeilao.Arquivado)
+            {
+                leilao.Situacao = SituacaoLeilao.Arquivado;
+                _dao.Update(leilao);
+            }
         }
     }
 }

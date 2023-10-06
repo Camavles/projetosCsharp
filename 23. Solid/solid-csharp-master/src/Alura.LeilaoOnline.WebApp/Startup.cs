@@ -1,5 +1,7 @@
 using Alura.LeilaoOnline.WebApp.Dados;
 using Alura.LeilaoOnline.WebApp.Dados.EFCore;
+using Alura.LeilaoOnline.WebApp.Services;
+using Alura.LeilaoOnline.WebApp.Services.Handlers;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -11,6 +13,12 @@ namespace Alura.LeilaoOnline.WebApp
         {
             // todo mundo que pedir a instância de ILeilaoDao, eu digo q está sendo implementada na LeilaoDaoComEFCore;
             services.AddTransient<ILeilaoDao, LeilaoDaoComEFCore>();
+            services.AddTransient<ICategoriaDao, CategoriaDaoComEFCore>();
+            services.AddTransient<IProdutoService, DefaultProdutoService>();
+            services.AddTransient<IAdminService, DefaultAdminService>();
+
+            services.AddTransient<AppDbContext>();
+
             services
                 .AddControllersWithViews()
                 .AddNewtonsoftJson(options => 

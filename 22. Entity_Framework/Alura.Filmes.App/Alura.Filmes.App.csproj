@@ -233,10 +233,14 @@
     <Compile Include="Dados\AluraFilmesContexto.cs" />
     <Compile Include="Dados\AtorConfiguration.cs" />
     <Compile Include="Dados\CategoriaConfiguration.cs" />
+    <Compile Include="Dados\ClienteConfiguration.cs" />
     <Compile Include="Dados\FilmeCategoriaConfiguration.cs" />
     <Compile Include="Dados\FilmeConfiguration.cs" />
     <Compile Include="Dados\FilmeAtorConfiguration.cs" />
+    <Compile Include="Dados\FuncionarioConfiguration.cs" />
     <Compile Include="Dados\IdiomaConfiguration.cs" />
+    <Compile Include="Dados\PessoaConfiguration.cs" />
+    <Compile Include="Extensions\ClassificacaoIndicativaExtentions.cs" />
     <Compile Include="Extensions\DbContextExtensions.cs" />
     <Compile Include="Migrations\20230905172101_Inicial.cs" />
     <Compile Include="Migrations\20230905172101_Inicial.designer.cs">
@@ -246,13 +250,45 @@
     <Compile Include="Migrations\20230905190957_DateTime.designer.cs">
       <DependentUpon>20230905190957_DateTime.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\20230907133354_Filme_Categoria_Idioma.cs" />
+    <Compile Include="Migrations\20230907133354_Filme_Categoria_Idioma.designer.cs">
+      <DependentUpon>20230907133354_Filme_Categoria_Idioma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\20230907135759_Indice_Ator.cs" />
+    <Compile Include="Migrations\20230907135759_Indice_Ator.designer.cs">
+      <DependentUpon>20230907135759_Indice_Ator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\20230907140758_Unique_Restricao_Ator.cs" />
+    <Compile Include="Migrations\20230907140758_Unique_Restricao_Ator.designer.cs">
+      <DependentUpon>20230907140758_Unique_Restricao_Ator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\20230907164848_Alter_DateTime.cs" />
+    <Compile Include="Migrations\20230907164848_Alter_DateTime.designer.cs">
+      <DependentUpon>20230907164848_Alter_DateTime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\20230907165026_Filme_Restricao_Check.cs" />
+    <Compile Include="Migrations\20230907165026_Filme_Restricao_Check.designer.cs">
+      <DependentUpon>20230907165026_Filme_Restricao_Check.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\20230913142924_Change_DateTime.cs" />
+    <Compile Include="Migrations\20230913142924_Change_DateTime.designer.cs">
+      <DependentUpon>20230913142924_Change_DateTime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\20230913143328_Change_Filme_Ator.cs" />
+    <Compile Include="Migrations\20230913143328_Change_Filme_Ator.designer.cs">
+      <DependentUpon>20230913143328_Change_Filme_Ator.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\AluraFilmesContextoModelSnapshot.cs" />
     <Compile Include="Negocio\Ator.cs" />
     <Compile Include="Negocio\Categoria.cs" />
+    <Compile Include="Negocio\ClassificacaoIndicativa.cs" />
+    <Compile Include="Negocio\Cliente.cs" />
     <Compile Include="Negocio\Filme.cs" />
     <Compile Include="Negocio\FilmeAtor.cs" />
     <Compile Include="Negocio\FilmeCategoria.cs" />
+    <Compile Include="Negocio\Funcionario.cs" />
     <Compile Include="Negocio\Idioma.cs" />
+    <Compile Include="Negocio\Pessoa.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -13,22 +13,22 @@ namespace Alura.Filmes.App.Dados
 
             builder.Property<int>("film_id");
             builder.Property<int>("actor_id");
-            
+
             builder.Property<DateTime>("last_update")
-                .IsRequired()
-                .HasColumnType("datetime")
-                .HasDefaultValueSql("getdate()");
+                .HasColumnType("datetime");
+                //.HasDefaultValueSql("getdate()");
+                
 
             builder.HasKey("film_id", "actor_id");
 
             builder
-                .HasOne(c => c.Filme)
-                .WithMany(d => d.Atores)
+                .HasOne(fa => fa.Filme)
+                .WithMany(f => f.Atores)
                 .HasForeignKey("film_id");
 
             builder
-                .HasOne(c => c.Ator)
-                .WithMany(d => d.Filmes)
+                .HasOne(fa => fa.Ator)
+                .WithMany(a => a.Filmes)
                 .HasForeignKey("actor_id");
 
             //builder.HasKey(c => new { c.AtorId, c.FilmeId });

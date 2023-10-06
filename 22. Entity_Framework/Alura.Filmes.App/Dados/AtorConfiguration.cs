@@ -31,8 +31,15 @@ namespace Alura.Filmes.App.Dados
 
             // como essa prop não existe na camada de negócio, aliás, na minha classe, eu preciso passar o tipo dessa propriedade que é DateTime;
             builder.Property<DateTime>("last_update")
-                .HasColumnType("datetime")
-                .HasDefaultValueSql("getdate()"); // com esse código, o SQL consegue pegar o datetime no momento da inclusão;
+                .HasColumnType("datetime");
+                //.HasDefaultValueSql("getdate()");
+                 // com esse código, o SQL consegue pegar o datetime no momento da inclusão;
+
+            builder.HasIndex(a => a.UltimoNome)
+                .HasName("idx_actor_last_name");
+
+            // RESTRIÇÃO UNIQUE;
+            builder.HasAlternateKey(a => new { a.PrimeiroNome, a.UltimoNome });
         }
     }
 }

@@ -1,0 +1,14 @@
+C:\Users\camil\source\repos\Exercicios\Modulo_22\TestandoFerramentas\TestandoFerramentas\bin\Debug\net6.0\TestandoFerramentas.exe
+C:\Users\camil\source\repos\Exercicios\Modulo_22\TestandoFerramentas\TestandoFerramentas\bin\Debug\net6.0\TestandoFerramentas.deps.json
+C:\Users\camil\source\repos\Exercicios\Modulo_22\TestandoFerramentas\TestandoFerramentas\bin\Debug\net6.0\TestandoFerramentas.runtimeconfig.json
+C:\Users\camil\source\repos\Exercicios\Modulo_22\TestandoFerramentas\TestandoFerramentas\bin\Debug\net6.0\TestandoFerramentas.dll
+C:\Users\camil\source\repos\Exercicios\Modulo_22\TestandoFerramentas\TestandoFerramentas\bin\Debug\net6.0\TestandoFerramentas.pdb
+C:\Users\camil\source\repos\Exercicios\Modulo_22\TestandoFerramentas\TestandoFerramentas\obj\Debug\net6.0\TestandoFerramentas.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\camil\source\repos\Exercicios\Modulo_22\TestandoFerramentas\TestandoFerramentas\obj\Debug\net6.0\TestandoFerramentas.AssemblyInfoInputs.cache
+C:\Users\camil\source\repos\Exercicios\Modulo_22\TestandoFerramentas\TestandoFerramentas\obj\Debug\net6.0\TestandoFerramentas.AssemblyInfo.cs
+C:\Users\camil\source\repos\Exercicios\Modulo_22\TestandoFerramentas\TestandoFerramentas\obj\Debug\net6.0\TestandoFerramentas.csproj.CoreCompileInputs.cache
+C:\Users\camil\source\repos\Exercicios\Modulo_22\TestandoFerramentas\TestandoFerramentas\obj\Debug\net6.0\TestandoFerramentas.dll
+C:\Users\camil\source\repos\Exercicios\Modulo_22\TestandoFerramentas\TestandoFerramentas\obj\Debug\net6.0\refint\TestandoFerramentas.dll
+C:\Users\camil\source\repos\Exercicios\Modulo_22\TestandoFerramentas\TestandoFerramentas\obj\Debug\net6.0\TestandoFerramentas.pdb
+C:\Users\camil\source\repos\Exercicios\Modulo_22\TestandoFerramentas\TestandoFerramentas\obj\Debug\net6.0\TestandoFerramentas.genruntimeconfig.cache
+C:\Users\camil\source\repos\Exercicios\Modulo_22\TestandoFerramentas\TestandoFerramentas\obj\Debug\net6.0\ref\TestandoFerramentas.dll
